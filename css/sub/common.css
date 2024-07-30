@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  font-family: "Roboto", "Noto Sans KR", sans-serif;
+  color: #000;
+}
+
+.wrap {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+  z-index: 999;
+  background: #fff;
+}
+
+.hader_wrap {
+  width: 1600px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 95px;
+}
+
+h1 {
+  width: fit-content;
+  height: 53px;
+}
+
+h1 a {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+h1 > a > div {
+  width: 40px;
+  height: 53px;
+  float: left;
+  line-height: 24px;
+  background: url(/img/sprites.png) -60px 7px;
+  background-repeat: no-repeat;
+  background-size: 250px;
+}
+
+nav {
+  width: 565px;
+  height: 24px;
+}
+
+nav > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  line-height: 24px;
+}
+
+nav > ul > li a {
+  font-size: 18px;
+}
+
+.icon {
+  width: 68px;
+  height: 24px;
+  display: flex;
+  column-gap: 20px;
+}
+
+.icon > a {
+  width: 100%;
+  height: 100%;
+}
+
+.icon .icon1 {
+  width: 24px;
+  height: 24px;
+  background: url(/img/sprites.png) -327px -270px;
+  background-repeat: no-repeat;
+}
+
+.icon .icon2 {
+  width: 24px;
+  height: 24px;
+  background: url(/img/sprites.png) -56px -320px;
+  background-repeat: no-repeat;
+}
+
+/* 메뉴 오버시*/
+nav > ul > li:hover a {
+  color: #d2d2d2;
+  transition: 0.3s;
+}
+
+/* 아이콘 오버시 */
+.icon > a:hover > .icon1,
+.icon > a:hover > .icon2 {
+  background-color: #d2d2d257;
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+/* 풋터 */
+
+footer {
+  width: 100%;
+  height: 180px;
+  border-top: 0.5px solid #00000005;
+  box-sizing: border-box;
+  padding-top: 40px;
+  background-color: #fff;
+}
+
+.foot {
+  width: 1600px;
+  height: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.foot_manu a {
+  width: fit-content;
+  height: fit-content;
+  margin-right: 105px;
+  font-size: 16px;
+  color: #aeb3be;
+}
+
+.bottom_copy {
+  width: fit-content;
+  height: fit-content;
+  font-size: 14px;
+  color: #8e8e8e;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.foot_manu a:hover {
+  color: #d2d2d2;
+  transition: 0.3s;
+}
