@@ -60,7 +60,7 @@ header {
 .search .icon9 {
   width: 9px;
   height: 9px;
-  background: url("/img/sub1_img/sub1_sprites.png") -150px -10px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -150px -10px;
   background-repeat: no-repeat;
   margin-right: 5px;
 }
@@ -87,7 +87,7 @@ header {
 .move_page .icon10 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -50px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -50px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
@@ -95,21 +95,21 @@ header {
 .move_page .icon11 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -90px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -90px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
 .move_page .icon12 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -10px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -10px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
 .move_page .icon13 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -130px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -130px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
@@ -311,94 +311,94 @@ header {
 }
 
 .box_gather > .boxs > .box .hospital1_icon {
-  background: url(/img/sprites.png) -257px -80px;
+  background: url(../../img/sprites.png) -257px -80px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital2_icon {
-  background: url(/img/sprites.png) -150px -180px;
+  background: url(../../img/sprites.png) -150px -180px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital3_icon {
-  background: url(/img/sprites.png) -10px -250px;
+  background: url(../../img/sprites.png) -10px -250px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital4_icon {
-  background: url(/img/sprites.png) -257px -150px;
+  background: url(../../img/sprites.png) -257px -150px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital5_icon {
-  background: url(/img/sprites.png) -80px -250px;
+  background: url(../../img/sprites.png) -80px -250px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital6_icon {
   margin: 0 auto;
-  background: url(/img/sprites.png) -220px -250px;
+  background: url(../../img/sprites.png) -220px -250px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital7_icon {
-  background: url(/img/sprites.png) -150px -250px;
+  background: url(../../img/sprites.png) -150px -250px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital8_icon {
-  background: url(/img/sprites.png) -10px -180px;
+  background: url(../../img/sprites.png) -10px -180px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital9_icon {
-  background: url(/img/sprites.png) -327px -80px;
+  background: url(../../img/sprites.png) -327px -80px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital10_icon {
-  background: url(/img/sprites.png) -327px -150px;
+  background: url(../../img/sprites.png) -327px -150px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital11_icon {
-  background: url(/img/sprites.png) -327px -10px;
+  background: url(../../img/sprites.png) -327px -10px;
   background-repeat: no-repeat;
 }
 
 .box_gather > .boxs > .box .hospital12_icon {
-  background: url(/img/sprites.png) -80px -180px;
+  background: url(../../img/sprites.png) -80px -180px;
   background-repeat: no-repeat;
 }
 
 /* 마우스 클릭시 보여야 하는 박스들 */
 .box_gather .hide_box > .box .hospital13_icon {
-  background: url("/img/sub1_img/sub1_sprites3.png") -150px -80px;
+  background: url("../../img/sub1_img/sub1_sprites3.png") -150px -80px;
   background-repeat: no-repeat;
 }
 
 .box_gather .hide_box > .box .hospital14_icon {
-  background: url("/img/sub1_img/sub1_sprites3.png") -10px -80px;
+  background: url("../../img/sub1_img/sub1_sprites3.png") -10px -80px;
   background-repeat: no-repeat;
 }
 
 .box_gather .hide_box > .box .hospital15_icon {
-  background: url("/img/sub1_img/sub1_sprites3.png") -10px -10px;
+  background: url("../../img/sub1_img/sub1_sprites3.png") -10px -10px;
   background-repeat: no-repeat;
 }
 
 .box_gather .hide_box > .box .hospital16_icon {
-  background: url("/img/sub1_img/sub1_sprites3.png") -80px -10px;
+  background: url("../../img/sub1_img/sub1_sprites3.png") -80px -10px;
   background-repeat: no-repeat;
 }
 
 .box_gather .hide_box > .box .hospital17_icon {
-  background: url("/img/sub1_img/sub1_sprites3.png") -150px -10px;
+  background: url("../../img/sub1_img/sub1_sprites3.png") -150px -10px;
   background-repeat: no-repeat;
 }
 
 .box_gather .hide_box > .box .hospital18_icon {
-  background: url("/img/sub1_img/sub1_sprites3.png") -80px -80px;
+  background: url("../../img/sub1_img/sub1_sprites3.png") -80px -80px;
   background-repeat: no-repeat;
 }
 
@@ -510,7 +510,7 @@ header {
 .search-box form .search_icon {
   width: 9px;
   height: 9px;
-  background: url(/img/sub1_img/sub1_sprites.png) -150px -10px;
+  background: url(../../img/sub1_img/sub1_sprites.png) -150px -10px;
   background-repeat: no-repeat;
   margin-right: 10px;
 }
@@ -589,7 +589,7 @@ header {
 .right_top > .app_img > div {
   width: 80px;
   height: 150px;
-  background: url("/img/sub1_img/sub1_sprites2.png") -110px -10px;
+  background: url("../../img/sub1_img/sub1_sprites2.png") -110px -10px;
   margin: 0 auto;
   margin-top: 12px;
 }
@@ -617,7 +617,7 @@ header {
 .right_bottom > .right_bottom1 > .icon10 {
   width: 11px;
   height: 11px;
-  background: url("/img/sub1_img/sub1_sprites2.png") -210px -99px;
+  background: url("../../img/sub1_img/sub1_sprites2.png") -210px -99px;
   margin-right: 5px;
 }
 

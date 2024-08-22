@@ -641,7 +641,7 @@ header {
 .alarm_service > .alarm_title .bell_icon {
   width: 15px;
   height: 15px;
-  background: url("../../img/sub2_img/sub2_sprites.png") -78px -10px;
+  background: url(../../img/sub2_img/sub2_sprites.png) -78px -10px;
   background-repeat: no-repeat;
 }
 
