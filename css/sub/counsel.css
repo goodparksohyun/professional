@@ -59,7 +59,7 @@ header {
 .search .icon9 {
   width: 9px;
   height: 9px;
-  background: url("/img/sub1_img/sub1_sprites.png") -150px -10px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -150px -10px;
   background-repeat: no-repeat;
   margin-right: 5px;
 }
@@ -86,7 +86,7 @@ header {
 .move_page .icon10 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -50px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -50px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
@@ -94,21 +94,21 @@ header {
 .move_page .icon11 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -90px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -90px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
 .move_page .icon12 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -10px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -10px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
 .move_page .icon13 {
   width: 20px;
   height: 20px;
-  background: url("/img/sub1_img/sub1_sprites.png") -110px -130px;
+  background: url("../../img/sub1_img/sub1_sprites.png") -110px -130px;
   margin-right: 10px;
   background-repeat: no-repeat;
 }
@@ -175,7 +175,7 @@ header {
 .top > .health_concerns > .icon23 {
   width: 48px;
   height: 48px;
-  background: url("/img/sub2_img/sub2_sprites.png") -10px -10px;
+  background: url("../../img/sub2_img/sub2_sprites.png") -10px -10px;
   background-repeat: no-repeat;
   margin-bottom: 15px;
 }
@@ -287,63 +287,63 @@ header {
 .sel2 .submenu > li > .icon14 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -257px -80px;
+  background: url("../../img/sprites.png") -257px -80px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon15 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -150px -180px;
+  background: url("../../img/sprites.png") -150px -180px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon16 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -257px -150px;
+  background: url("../../img/sprites.png") -257px -150px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon17 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -80px -250px;
+  background: url("../../img/sprites.png") -80px -250px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon18 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -220px -250px;
+  background: url("../../img/sprites.png") -220px -250px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon19 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -150px -250px;
+  background: url("../../img/sprites.png") -150px -250px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon20 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -10px -180px;
+  background: url("../../img/sprites.png") -10px -180px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon21 {
   width: 50px;
   height: 50px;
-  background: url("/img/sprites.png") -327px -150px;
+  background: url("../../img/sprites.png") -327px -150px;
   background-repeat: no-repeat;
 }
 
 .sel2 .submenu > li > .icon22 {
   width: 50px;
   height: 50px;
-  background: url("/img/sub1_img/sub1_sprites3.png") -80px -80px;
+  background: url("../../img/sub1_img/sub1_sprites3.png") -80px -80px;
   background-repeat: no-repeat;
 }
 
@@ -426,56 +426,56 @@ header {
 .sel2 .click_menu > li > .icon23 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -130px -70px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -130px -70px;
   background-repeat: no-repeat;
 }
 
 .sel2 .click_menu > li > .icon24 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -10px -130px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -10px -130px;
   background-repeat: no-repeat;
 }
 
 .sel2 .click_menu > li > .icon25 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -10px -70px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -10px -70px;
   background-repeat: no-repeat;
 }
 
 .sel2 .click_menu > li > .icon26 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -130px -10px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -130px -10px;
   background-repeat: no-repeat;
 }
 
 .sel2 .click_menu > li > .icon27 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -70px -10px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -70px -10px;
   background-repeat: no-repeat;
 }
 
 .sel2 .click_menu > li > .icon28 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -70px -70px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -70px -70px;
   background-repeat: no-repeat;
 }
 
 .sel2 .click_menu > li > .icon29 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -70px -130px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -70px -130px;
   background-repeat: no-repeat;
 }
 
 .sel2 .click_menu > li > .icon30 {
   width: 50px;
   height: 50px;
-  background: url("/img/counsel.img/counsel_sprites.png") -10px -10px;
+  background: url("../../img/counsel.img/counsel_sprites.png") -10px -10px;
   background-repeat: no-repeat;
 }
 
@@ -608,7 +608,7 @@ header {
   width: 14px;
   height: 14px;
   margin: 0 auto;
-  background: url("/img/sprites.png") -397px -251px;
+  background: url("../../img/sprites.png") -397px -251px;
   background-repeat: no-repeat;
 }
 
@@ -641,7 +641,7 @@ header {
 .alarm_service > .alarm_title .bell_icon {
   width: 15px;
   height: 15px;
-  background: url(/img/sub2_img/sub2_sprites.png) -78px -10px;
+  background: url("../../img/sub2_img/sub2_sprites.png") -78px -10px;
   background-repeat: no-repeat;
 }
 
@@ -753,7 +753,7 @@ header {
 .right_top > .app_img > div {
   width: 80px;
   height: 150px;
-  background: url("/img/sub1_img/sub1_sprites2.png") -110px -10px;
+  background: url("../../img/sub1_img/sub1_sprites2.png") -110px -10px;
   margin: 0 auto;
   margin-top: 12px;
 }
@@ -781,7 +781,7 @@ header {
 .right_bottom > .right_bottom1 > .icon10 {
   width: 11px;
   height: 11px;
-  background: url("/img/sub1_img/sub1_sprites2.png") -210px -99px;
+  background: url("../../img/sub1_img/sub1_sprites2.png") -210px -99px;
   margin-right: 5px;
 }
 
