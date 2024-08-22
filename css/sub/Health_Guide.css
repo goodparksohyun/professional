@@ -1,0 +1,372 @@
+@charset "utf-8";
+
+/* 헤더 */
+header {
+  border-bottom: 0.5px solid #00000005;
+}
+
+/* 건강 가이드 섹션 */
+
+.Guide_sec {
+  width: 100%;
+  height: 910px;
+}
+
+.Guide_con {
+  width: 1796px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40px 0px;
+}
+
+.Guide_lefttext {
+  width: 265px;
+  height: 291px;
+}
+
+.logo_text {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo_text h1 {
+  margin-right: 20px;
+}
+
+.logo_text .search {
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffffff2e;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.search a {
+  font-size: 14px;
+  color: #000000a8;
+  display: flex;
+  align-items: center;
+  line-height: 13px;
+}
+
+.search .icon9 {
+  width: 9px;
+  height: 9px;
+  background: url("/img/sub1_img/sub1_sprites.png") -150px -10px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.move_page {
+  width: fit-content;
+  height: fit-content;
+}
+
+.move_page .move_pagetext {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 15px;
+}
+
+.move_pagetext a {
+  font-size: 16px;
+  color: #000000a8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move_page .icon10 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -50px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.move_page .icon11 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -90px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.move_page .icon12 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -10px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.move_page .icon13 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -130px;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.btn button {
+  font-size: 14px;
+  width: 265px;
+  height: 26px;
+  color: #000000a8;
+  background-color: #f4f4f485;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.user_info {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.user_info a {
+  width: fit-content;
+  height: 36px;
+  font-size: 14px;
+  color: #000000a8;
+  box-sizing: border-box;
+  padding: 11px;
+  background-color: #ffffff2e;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+}
+
+/* 가운데 건강 가이드 섹션 */
+.middle_Guide {
+  width: fit-content;
+  height: 830px;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.middle_Guide .top {
+  width: fit-content;
+  height: fit-content;
+}
+
+.top > p {
+  font-size: 14px;
+  color: #aeb3be;
+}
+
+.top .Health_Guide {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.top > .Health_Guide > h3 {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+}
+
+.middle_Guide > .text_gather > h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  margin-top: 40px;
+}
+
+/* 건강 가이드 내용 */
+
+.middle_Guide > .text_gather {
+  width: 1180px;
+  height: fit-content;
+}
+
+.middle_Guide > .text_gather > .text_gather1 {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.text_gather1 .text1 {
+  width: 560px;
+  height: fit-content;
+  margin-bottom: 40px;
+  margin-left: -5px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.text_wrap {
+  float: left;
+}
+
+.text1 h4 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.text1 p {
+  width: fit-content;
+  height: fit-content;
+  line-height: 22px;
+  font-size: 18px;
+  color: #9ca1a7;
+}
+
+.date {
+  width: 81px;
+  height: 19px;
+  margin-top: 15px;
+}
+
+.date p {
+  font-size: 16px;
+  color: #aeb3be;
+}
+
+.img_box {
+  width: fit-content;
+  height: fit-content;
+  float: right;
+}
+
+/* 오른쪽 섹션 */
+
+.right {
+  width: fit-content;
+  width: fit-content;
+}
+
+.right_top {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #fffef8;
+  border: 0.5px solid #dedede;
+  border-radius: 8px;
+}
+
+.right_top h3 {
+  font-size: 12px;
+  color: #000;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.right_top p {
+  font-size: 10px;
+  color: #00000087;
+  margin-bottom: 5px;
+}
+
+.right_top a {
+  font-size: 10px;
+  color: #000000b8;
+}
+
+.right_top > .app_img > div {
+  width: 80px;
+  height: 150px;
+  background: url("/img/sub1_img/sub1_sprites2.png") -110px -10px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.right_bottom {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.right_bottom > h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.right_bottom1 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.right_bottom > .right_bottom1 > .icon10 {
+  width: 11px;
+  height: 11px;
+  background: url("/img/sub1_img/sub1_sprites2.png") -210px -99px;
+  margin-right: 5px;
+  background-repeat: no-repeat;
+}
+
+.right_bottom > .right_bottom1 > p {
+  font-size: 15px;
+  color: #000000a8;
+}
+
+/* 관련 페이지로 이동하는 a태그들에게 마우스 오버시 */
+.move_pagetext a:hover {
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+}
+
+/* 검색 버튼과 , 내 정보 보기, 로그인 하기 버튼 오버시 */
+.logo_text .search:hover,
+.user_info a:hover {
+  background-color: #d2d2d21f;
+  transition: 0.3s;
+}
+
+/* 앱 다운로드 버튼 오버시 */
+.btn button:hover {
+  background-color: #f4f4f4;
+  transition: 0.3s;
+}
+
+/* 건강 가이드 내용 오버시 */
+.text_gather1 .text1:hover {
+  background-color: rgb(245, 246, 247, 0.41);
+  border-radius: 8px;
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: default;
+}
+
+/* 지금 다운로드 받기 버튼 오버시 */
+.right_top > a:hover {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* 실시간 상담 베스트 내용 오버시 */
+.right_bottom .right_bottom1 p:hover {
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+  cursor: default;
+}

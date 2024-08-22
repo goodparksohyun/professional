@@ -1,0 +1,864 @@
+@charset "utf-8";
+
+/* 헤더 */
+header {
+  border-bottom: 0.5px solid #00000005;
+}
+
+/* 바로 질문하기 섹션 */
+.counsel_sec {
+  width: 100%;
+  height: 1142px;
+}
+
+.counsel_con {
+  width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 40px;
+}
+
+.hospital_lefttext {
+  width: 265px;
+  height: 291px;
+}
+
+.logo_text {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo_text h1 {
+  margin-right: 20px;
+}
+
+.logo_text .search {
+  width: fit-content;
+  height: fit-content;
+  background-color: #ffffff2e;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 5px 10px;
+}
+
+.search a {
+  font-size: 14px;
+  color: #000000a8;
+  display: flex;
+  align-items: center;
+  line-height: 13px;
+}
+
+.search .icon9 {
+  width: 9px;
+  height: 9px;
+  background: url("/img/sub1_img/sub1_sprites.png") -150px -10px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.move_page {
+  width: fit-content;
+  height: fit-content;
+}
+
+.move_page .move_pagetext {
+  width: fit-content;
+  height: fit-content;
+  margin-bottom: 15px;
+}
+
+.move_pagetext a {
+  font-size: 16px;
+  color: #000000a8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.move_page .icon10 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -50px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.move_page .icon11 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -90px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+.move_page .icon12 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -10px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+.move_page .icon13 {
+  width: 20px;
+  height: 20px;
+  background: url("/img/sub1_img/sub1_sprites.png") -110px -130px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+}
+
+.btn button {
+  font-size: 14px;
+  width: 265px;
+  height: 26px;
+  color: #000000a8;
+  background-color: #f4f4f485;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.user_info {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.user_info a {
+  width: fit-content;
+  height: 36px;
+  font-size: 14px;
+  color: #000000a8;
+  box-sizing: border-box;
+  padding: 11px;
+  background-color: #ffffff2e;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+}
+
+/* 중간 바로 질문하기 섹션 */
+
+.middle_counsel {
+  width: 600px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.middle_counsel .top {
+  width: 100%;
+  height: fit-content;
+}
+
+.top > p {
+  font-size: 14px;
+  color: #aeb3be;
+}
+
+.top .health_concerns {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 15px;
+}
+
+.top > .health_concerns > .icon23 {
+  width: 48px;
+  height: 48px;
+  background: url("/img/sub2_img/sub2_sprites.png") -10px -10px;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+.health_concerns h3 {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.top > .health_concerns > p {
+  font-size: 16px;
+  color: #aeb3be;
+  margin-bottom: 15px;
+}
+
+.sel2 .subject_aake {
+  font-size: 14px;
+  width: fit-content;
+  height: 22px;
+  color: #0000007d;
+  font-weight: 550;
+  background-color: #f4f4f485;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+  padding: 2px 5px;
+  line-height: 22px;
+}
+
+/* 2차 메뉴 */
+.sel2 .subject_aake > .submenu {
+  display: none;
+  width: 502px;
+  height: auto;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 30px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  border: 0.5px solid #d2d2d22b;
+  background-color: #fff;
+  top: 30px;
+  left: -1px;
+  z-index: 8;
+}
+
+.sel2 .submenu > .submenutop_title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.sel2 .submenu > .submenutop_title button {
+  width: 35%;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #dededed4;
+  padding-bottom: 12px;
+  background-color: transparent;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.sel2 .submenu li {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.sel2 .submenu > li > .hospital > a {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.sel2 .submenu > li > .hospital > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #aeb3be;
+}
+
+.sel2 .submenu > li > .hospital {
+  width: 50%;
+  height: fit-content;
+}
+
+/* 과목 서브메뉴 클릭시 글자 굵기, 줄 컬러 변경하기 */
+.submenu > .submenutop_title > #on {
+  font-weight: bold;
+  border-bottom: 2px solid #000000e3;
+}
+
+.sel2 .submenu > li > .icon14 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -257px -80px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon15 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -150px -180px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon16 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -257px -150px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon17 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -80px -250px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon18 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -220px -250px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon19 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -150px -250px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon20 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -10px -180px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon21 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -327px -150px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .submenu > li > .icon22 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sub1_img/sub1_sprites3.png") -80px -80px;
+  background-repeat: no-repeat;
+}
+
+/* 클릭하면 보이는 서브메뉴 */
+.sel2 .subject_aake > .click_menu {
+  display: none;
+  width: 502px;
+  height: auto;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 30px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  border: 0.5px solid #d2d2d22b;
+  background-color: #fff;
+  top: 30px;
+  left: -1px;
+  z-index: 8;
+}
+
+.sel2 .click_menu > .submenutop_title {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.sel2 .click_menu > .submenutop_title > button {
+  width: 35%;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 2px solid #dededed4;
+  padding-bottom: 12px;
+  background-color: transparent;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.sel2 .click_menu li {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.sel2 .click_menu > li > .hospital > a {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.sel2 .click_menu > li > .hospital > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #aeb3be;
+}
+
+.sel2 .click_menu > li > .hospital {
+  width: 50%;
+  height: fit-content;
+}
+
+/* 증상 버튼 클릭 시 글씨 굵기, 줄 컬러 변경하기 */
+.click_menu > .submenutop_title > #on {
+  font-weight: bold;
+  border-bottom: 2px solid #000000e3;
+}
+
+.sel2 .click_menu > li > .icon23 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -130px -70px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .click_menu > li > .icon24 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -10px -130px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .click_menu > li > .icon25 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -10px -70px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .click_menu > li > .icon26 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -130px -10px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .click_menu > li > .icon27 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -70px -10px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .click_menu > li > .icon28 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -70px -70px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .click_menu > li > .icon29 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -70px -130px;
+  background-repeat: no-repeat;
+}
+
+.sel2 .click_menu > li > .icon30 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/counsel.img/counsel_sprites.png") -10px -10px;
+  background-repeat: no-repeat;
+}
+
+/* 질문 박스 */
+.questionbox_form {
+  width: 100%;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.questionbox_form > .questionbox_text {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-bottom: 10px;
+}
+
+.questionbox_form > .questionbox_text > h3 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+.questionbox_form > .questionbox_text span {
+  color: #000;
+}
+
+.questionbox_form > .questionbox_text > p {
+  font-size: 10px;
+  font-weight: bold;
+  color: #aeb3be;
+}
+
+.questionbox_form > .question-box {
+  width: 100%;
+  height: 150px;
+}
+
+.questionbox_form > .question-box > form {
+  width: 100%;
+  height: 150px;
+  border-radius: 4px;
+  border: 0.5px solid #dedede;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  background-color: #fff;
+}
+
+.questionbox_form > .question-box textarea {
+  width: 100%;
+  height: 97%;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: transparent;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+}
+
+.questionbox_form > .question-box textarea::placeholder {
+  color: #aeb3be75;
+  font-size: 12px;
+}
+
+/* 체크박스 */
+
+.check_box {
+  width: fit-content;
+  height: fit-content;
+}
+
+.check_box > label {
+  width: fit-content;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.check_box input[type="checkbox"] {
+  width: 15px;
+  height: 15px;
+  border-radius: 4px;
+}
+
+.check_box span {
+  font-size: 12px;
+  color: #aeb3be;
+}
+
+/* 사진 첨부 */
+
+.Add_photo {
+  width: 100%;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.Add_photo > h3 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.Add_photo > p {
+  font-size: 12px;
+  color: #aeb3be;
+}
+
+.Add_photo > .Add_button {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+}
+
+.Add_photo > .Add_button > button {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #dedede;
+  background-color: transparent;
+}
+
+.Add_photo > .Add_button .plus {
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+  background: url("/img/sprites.png") -397px -251px;
+  background-repeat: no-repeat;
+}
+
+/* 안심하세요 (알림) */
+.alarm {
+  width: 100%;
+  height: fit-content;
+}
+
+.alarm > .alarm_service {
+  width: 247px;
+  height: 72px;
+  background-color: #fffef8;
+  border-radius: 4px;
+  border: 0.5px solid #dedede;
+  margin-top: 40px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.alarm_service > .alarm_title {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  margin-bottom: 5px;
+}
+
+.alarm_service > .alarm_title .bell_icon {
+  width: 15px;
+  height: 15px;
+  background: url(/img/sub2_img/sub2_sprites.png) -78px -10px;
+  background-repeat: no-repeat;
+}
+
+.alarm_service > .alarm_title > h3 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000;
+}
+
+.alarm_service > p {
+  font-size: 12px;
+  color: #000000c2;
+  line-height: 16px;
+}
+
+/* 실시간 의료상담 운영 안내 사항 */
+
+.notification {
+  width: 100%;
+  height: auto;
+  margin-top: 40px;
+}
+
+.notification > h3 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.notification > .notification_text {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+  left: 0;
+  right: 0;
+}
+
+.notification > .notification_text > p {
+  font-size: 13px;
+  line-height: 16px;
+  color: #aeb3be;
+  margin-left: 10px;
+  margin-bottom: 15px;
+}
+
+.notification > .notification_text > p::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #aeb3be;
+}
+
+/* 글 올리기 버튼 태그 */
+.upload {
+  width: 100%;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.upload > button {
+  width: 100%;
+  height: 30px;
+  border-radius: 4px;
+  border: 0.5px solid #dedede;
+  background-color: #ffffff2e;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 14px;
+  color: #000000e6;
+}
+
+/* 오른쪽 섹션 */
+
+.right {
+  width: fit-content;
+  width: fit-content;
+  margin-top: 40px;
+}
+
+.right_top {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #fffef8;
+  border: 0.5px solid #dedede;
+  border-radius: 8px;
+}
+
+.right_top h3 {
+  font-size: 12px;
+  color: #000;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.right_top p {
+  font-size: 10px;
+  color: #00000087;
+  margin-bottom: 5px;
+}
+
+.right_top a {
+  font-size: 10px;
+  color: #000000b8;
+}
+
+.right_top > .app_img > div {
+  width: 80px;
+  height: 150px;
+  background: url("/img/sub1_img/sub1_sprites2.png") -110px -10px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.right_bottom {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.right_bottom > h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.right_bottom1 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.right_bottom > .right_bottom1 > .icon10 {
+  width: 11px;
+  height: 11px;
+  background: url("/img/sub1_img/sub1_sprites2.png") -210px -99px;
+  margin-right: 5px;
+}
+
+.right_bottom > .right_bottom1 > p {
+  font-size: 15px;
+  color: #000000a8;
+}
+
+/* 풋터 */
+footer {
+  margin-top: 40px;
+}
+
+/* 관련 페이지로 이동하는 a태그들에게 마우스 오버시 */
+.move_pagetext a:hover {
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+}
+
+/* 검색 버튼과 , 내 정보 보기, 로그인 하기 버튼 오버시 */
+.logo_text .search:hover,
+.user_info a:hover {
+  background-color: #d2d2d21f;
+  transition: 0.3s;
+}
+
+/* 앱 다운로드 버튼 오버시 */
+.btn button:hover {
+  background-color: #f4f4f4;
+  transition: 0.3s;
+}
+
+/* 과목 서브메뉴안에 있는 li 마우스 오버시 */
+.sel2 .subject_aake > .submenu > li:hover {
+  background-color: rgb(245, 246, 247, 0.41);
+}
+
+/* 증상 서브메뉴안에 있는 li 마우스 오버시 */
+.sel2 .subject_aake > .click_menu > li:hover {
+  background-color: rgb(245, 246, 247, 0.41);
+}
+
+/* 과목 선택 버튼 오버시 */
+.sel2 .subject_aake:hover {
+  background-color: #f4f4f4;
+  cursor: default;
+}
+
+/* 마우스 오버시 서브메뉴를 나타내라 */
+.sel2 .subject_aake:hover .submenu {
+  display: block;
+  transition: 0.3s;
+}
+
+/* 사진 첨부 버튼 오버시 */
+.Add_photo > .Add_button > button:hover {
+  background-color: #d2d2d21f;
+  transition: 0.3s;
+}
+
+/* 글 올리기 버튼 오버시 */
+.upload > button:hover {
+  background-color: #d2d2d21f;
+  transition: 0.3s;
+}
+
+/* 지금 다운로드 받기 버튼 오버시 */
+.right_top > a:hover {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* 실시간 상담 베스트 내용 오버시 */
+.right_bottom .right_bottom1 p:hover {
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+  cursor: default;
+}

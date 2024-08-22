@@ -24,7 +24,7 @@
           <nav>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#">회사소개</a>
@@ -75,7 +75,6 @@
             </div>
           </div>
         </section>
-
         <!-- 실시간 상담 섹션 -->
         <section class="middle_sec">
           <div class="middle_con">
@@ -98,47 +97,132 @@
               <!-- 관련 페이지로 이동하는 a태그들-->
               <div class="move_page">
                 <div class="move_pagetext">
-                  <a href="#"
+                  <a href="http://127.0.0.1:5502/Find_hospital.html"
                     ><div class="icon10"></div>
                     병원 찾기</a
                   >
                 </div>
                 <div class="move_pagetext">
-                  <a href="#"
+                  <a href="http://127.0.0.1:5502/sub/medical.html"
                     ><div class="icon11"></div>
                     실시간 의료 상담</a
                   >
                 </div>
                 <div class="move_pagetext">
-                  <a href="#"
+                  <a href="http://127.0.0.1:5502/counsel.html"
                     ><div class="icon12"></div>
                     바로 질문하기</a
                   >
                 </div>
                 <div class="move_pagetext">
-                  <a href="#"
+                  <a href="http://127.0.0.1:5502/Health_Guide.html#"
                     ><div class="icon13"></div>
                     건강 가이드</a
                   >
                 </div>
               </div>
               <div class="btn">
-                <button>앱 다운로드</button>
+                <button type="button">앱 다운로드</button>
               </div>
               <div class="user_info">
                 <a href="#">내 정보 보기</a>
                 <a href="#">로그인 하기</a>
               </div>
             </div>
-            <!-- 가운데 질문 페이지 -->
+            <!-- 가운데 질문 모음 -->
             <div class="middle_question">
               <div class="top">
                 <p>홈 > 실시간 의료상담 > 전체</p>
                 <div class="all">
                   <h3>전체</h3>
-                </div>
-                <div class="select">
-                  <button>과목 선택 ▽</button>
+                  <div class="sel">
+                    <nav>
+                      <ul>
+                        <li class="subject">
+                          과목선택
+                          <svg
+                            width="12"
+                            height="12"
+                            viewBox="0 0 16 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M11.3594 5.40002L8.03125 8.8219L4.70312 5.40002L3.75 6.3219L8.03125 10.7281L12.3125 6.3219L11.3594 5.40002Z"
+                              fill="#8D9297"
+                            ></path>
+                          </svg>
+                          <!-- 2차 메뉴 -->
+                          <ul class="submenu">
+                            <h2>과목</h2>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">내과</a>
+                                <p>감기, 편도염, 소화기, 호흡기 등</p>
+                              </div>
+                              <div class="icon14"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">피부과</a>
+                                <p>여드름, 화상, 흉터 상처 등</p>
+                              </div>
+                              <div class="icon15"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">이비인후과</a>
+                                <p>비염, 이명, 등</p>
+                              </div>
+                              <div class="icon16"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">안과</a>
+                                <p>결막염, 눈병, 안구건조증 등</p>
+                              </div>
+                              <div class="icon17"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">가정의학과</a>
+                                <p>건강검진, 예방, 기타 질환 등</p>
+                              </div>
+                              <div class="icon18"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">소아과</a>
+                                <p>감기, 발열, 소화기, 호흡기 등</p>
+                              </div>
+                              <div class="icon19"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">정형외과</a>
+                                <p>관절염, 연골파열, 골절, 척추 등</p>
+                              </div>
+                              <div class="icon20"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">비뇨기과</a>
+                                <p>남성질환, 방광염 등</p>
+                              </div>
+                              <div class="icon21"></div>
+                            </li>
+                            <li>
+                              <div class="hospital">
+                                <a href="#">기타</a>
+                                <p>반려동물</p>
+                              </div>
+                              <div class="icon22"></div>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
               </div>
               <div class="text_gather">
@@ -152,10 +236,14 @@
                   </p>
                   <span>내과</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="text">
@@ -169,10 +257,14 @@
                   </p>
                   <span>어지럼증</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="text">
@@ -186,10 +278,14 @@
                   </p>
                   <span>산부인과</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="text">
@@ -201,10 +297,14 @@
                   </p>
                   <span>정신의학과</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="text">
@@ -217,10 +317,14 @@
                   </p>
                   <span>내과</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="text">
@@ -234,10 +338,14 @@
                   </p>
                   <span>어지럼증</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="text">
@@ -251,10 +359,14 @@
                   </p>
                   <span>산부인과</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
                 <div class="text">
@@ -266,10 +378,14 @@
                   </p>
                   <span>정신의학과</span>
                   <div class="icons_set">
-                    <div class="icon7"></div>
-                    <p>1개의 답변</p>
-                    <p>방금 전</p>
-                    <div class="circle"></div>
+                    <div class="icon_text">
+                      <div class="icon7"></div>
+                      <p>1개의 답변</p>
+                    </div>
+                    <div class="Just_before">
+                      <p>방금 전</p>
+                      <div class="circle"></div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -297,7 +413,7 @@
                   <p>관리를 해도 계속 생기는 좁살 여드름..</p>
                 </div>
                 <div class="right_bottom1">
-                  <div class="icon9"></div>
+                  <div class="icon10"></div>
                   <p>여름철에 질염 관리하는 방법에 대해...</p>
                 </div>
                 <div class="right_bottom1">
@@ -317,6 +433,29 @@
           </div>
         </section>
       </main>
+      <!-- 풋터 -->
+      <footer>
+        <div class="foot">
+          <!-- 로고 -->
+          <h1>
+            <a href="/">
+              <div></div>
+              professional
+            </a>
+          </h1>
+          <!-- 풋터 메뉴 -->
+          <div class="foot_manu">
+            <a href="#">이용약관</a>
+
+            <a href="#">개인정보처리방침</a>
+
+            <a href="#">위치기반 서비스 이용약관</a>
+
+            <a href="#">서비스 이용약관</a>
+          </div>
+        </div>
+        <div class="bottom_copy">&copy; professional. All rights reserved.</div>
+      </footer>
     </div>
   </body>
 </html>

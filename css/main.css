@@ -40,6 +40,7 @@ h1 a {
   font-weight: bold;
   display: flex;
   align-items: center;
+  color: #474747;
 }
 
 h1 > a > div {
@@ -52,12 +53,12 @@ h1 > a > div {
   background-size: 250px;
 }
 
-nav {
+.hader_wrap > nav {
   width: 565px;
   height: 24px;
 }
 
-nav > ul {
+.hader_wrap > nav > ul {
   width: 100%;
   height: 100%;
   display: flex;
@@ -66,7 +67,7 @@ nav > ul {
   line-height: 24px;
 }
 
-nav > ul > li a {
+.hader_wrap > nav > ul > li a {
   font-size: 18px;
 }
 
@@ -97,7 +98,7 @@ nav > ul > li a {
 }
 
 /* 메뉴 오버시*/
-nav > ul > li:hover a {
+.hader_wrap > nav > ul > li:hover a {
   color: #d2d2d2;
   transition: 0.3s;
 }
@@ -422,6 +423,7 @@ main {
   width: 30px;
   height: 30px;
   background: url("../img/sprites.png") -327px -220px;
+  background-repeat: no-repeat;
   float: left;
 }
 
@@ -434,10 +436,11 @@ main {
 
 /* 실시간 상담 내용들 오버시 */
 .text_gather .text:hover {
-  background-color: rgb(245, 246, 247);
+  background-color: rgb(245, 246, 247, 0.41);
   border-radius: 8px;
   transform: scale(1.1);
   transition: 0.3s;
+  cursor: default;
 }
 
 /* 더보기 버튼 오버시 */
@@ -519,10 +522,11 @@ main {
 
 /* 건강 가이드 내용 오버시 */
 .text_gather1 .text1:hover {
-  background-color: rgb(245, 246, 247);
+  background-color: rgb(245, 246, 247, 0.41);
   border-radius: 8px;
   transform: scale(1.1);
   transition: 0.3s;
+  cursor: default;
 }
 
 /* 다섯번째 서브 배너 */
@@ -629,7 +633,6 @@ main {
 .box_text {
   width: fit-content;
   height: fit-content;
-  /* background-color: antiquewhite; */
   margin: 0 auto;
 }
 
@@ -673,6 +676,7 @@ main {
   height: 20px;
   margin-left: 3px;
   background: url(../img/sprites.png) -397px -56px;
+  background-repeat: no-repeat;
 }
 
 .imgs {

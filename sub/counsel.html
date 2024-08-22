@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>바로 질문하기</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sub/common.css" />
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/sub/counsel.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="hader_wrap">
+          <!-- 로고 -->
+          <h1>
+            <a href="/">
+              <div></div>
+              professional
+            </a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav>
+            <ul>
+              <li>
+                <a href="/">Home</a>
+              </li>
+              <li>
+                <a href="#">회사소개</a>
+              </li>
+              <li>
+                <a href="#">제휴신청</a>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- 아이콘 -->
+          <div class="icon">
+            <a href="#"><div class="icon1"></div></a>
+            <a href="#"><div class="icon2"></div></a>
+          </div>
+        </div>
+      </header>
+      <!-- 중간 바로 질문하기 섹션 -->
+      <section class="counsel_sec">
+        <div class="counsel_con">
+          <div class="hospital_lefttext">
+            <div class="logo_text">
+              <!-- 로고 -->
+              <h1>
+                <a href="/">
+                  <div></div>
+                  professional
+                </a>
+              </h1>
+              <div class="search">
+                <a href="#">
+                  <div class="icon9"></div>
+                  검색
+                </a>
+              </div>
+            </div>
+            <!-- 관련 페이지로 이동하는 a태그들-->
+            <div class="move_page">
+              <div class="move_pagetext">
+                <a href="http://127.0.0.1:5502/Find_hospital.html"
+                  ><div class="icon10"></div>
+                  병원 찾기</a
+                >
+              </div>
+              <div class="move_pagetext">
+                <a href="http://127.0.0.1:5502/sub/medical.html"
+                  ><div class="icon11"></div>
+                  실시간 의료 상담</a
+                >
+              </div>
+              <div class="move_pagetext">
+                <a href="http://127.0.0.1:5502/counsel.html"
+                  ><div class="icon12"></div>
+                  바로 질문하기</a
+                >
+              </div>
+              <div class="move_pagetext">
+                <a href="http://127.0.0.1:5502/Health_Guide.html#"
+                  ><div class="icon13"></div>
+                  건강 가이드</a
+                >
+              </div>
+              <div class="btn">
+                <button type="button">앱 다운로드</button>
+              </div>
+              <div class="user_info">
+                <a href="#">내 정보 보기</a>
+                <a href="#">로그인 하기</a>
+              </div>
+            </div>
+          </div>
+          <!-- 중간 바로 질문하기 섹션 -->
+          <div class="middle_counsel">
+            <div class="top">
+              <p>홈 > 실시간 의료상담 > 질문 작성</p>
+              <div class="health_concerns">
+                <div class="icon23"></div>
+                <h3>건강 고민을 물어보세요</h3>
+                <p>평균 10분 안에 답변 드립니다</p>
+                <div class="sel2">
+                  <nav>
+                    <ul>
+                      <li class="subject_aake">
+                        증상 / 과목 선택
+                        <svg
+                          width="12"
+                          height="12"
+                          viewBox="0 0 16 16"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M11.3594 5.40002L8.03125 8.8219L4.70312 5.40002L3.75 6.3219L8.03125 10.7281L12.3125 6.3219L11.3594 5.40002Z"
+                            fill="#8D9297"
+                          ></path>
+                        </svg>
+                        <!-- 2차 메뉴 -->
+                        <ul class="submenu">
+                          <div class="submenutop_title">
+                            <button type="button" onclick="subject()" id="on">
+                              과목
+                            </button>
+                            <button type="button" onclick="symptoms()" id="off">
+                              증상
+                            </button>
+                          </div>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">내과</a>
+                              <p>감기, 편도염, 소화기, 호흡기 등</p>
+                            </div>
+                            <div class="icon14"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">피부과</a>
+                              <p>여드름, 화상, 흉터 상처 등</p>
+                            </div>
+                            <div class="icon15"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">이비인후과</a>
+                              <p>비염, 이명, 등</p>
+                            </div>
+                            <div class="icon16"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">안과</a>
+                              <p>결막염, 눈병, 안구건조증 등</p>
+                            </div>
+                            <div class="icon17"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">가정의학과</a>
+                              <p>건강검진, 예방, 기타 질환 등</p>
+                            </div>
+                            <div class="icon18"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">소아과</a>
+                              <p>감기, 발열, 소화기, 호흡기 등</p>
+                            </div>
+                            <div class="icon19"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">정형외과</a>
+                              <p>관절염, 연골파열, 골절, 척추 등</p>
+                            </div>
+                            <div class="icon20"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">비뇨기과</a>
+                              <p>남성질환, 방광염 등</p>
+                            </div>
+                            <div class="icon21"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">기타</a>
+                              <p>반려동물</p>
+                            </div>
+                            <div class="icon22"></div>
+                          </li>
+                        </ul>
+                        <!-- 클릭하면 나타나는 서브메뉴 -->
+                        <ul class="click_menu">
+                          <div class="submenutop_title">
+                            <button type="button" onclick="subject()" id="off">
+                              과목
+                            </button>
+                            <button type="button" onclick="symptoms()" id="on">
+                              증상
+                            </button>
+                          </div>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">감기 / 몸살</a>
+                              <p>기침, 가래, 콧물, 발열 등</p>
+                            </div>
+                            <div class="icon23"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">소화기질환</a>
+                              <p>소화불량, 장염, 위염 등</p>
+                            </div>
+                            <div class="icon24"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">정신건강</a>
+                              <p>우을증, 공황장애 등</p>
+                            </div>
+                            <div class="icon25"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">여성질환</a>
+                              <p>질염, 방광염 등</p>
+                            </div>
+                            <div class="icon26"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">남성질환</a>
+                              <p>남성질환, 방광염 등</p>
+                            </div>
+                            <div class="icon27"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">사후피임약</a>
+                              <p>피임약</p>
+                            </div>
+                            <div class="icon28"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">반려동물 피부염</a>
+                              <p>진드기, 피부염증 등</p>
+                            </div>
+                            <div class="icon29"></div>
+                          </li>
+                          <li>
+                            <div class="hospital">
+                              <a href="#">반려동물 관절</a>
+                              <p>골절, 파열 등</p>
+                            </div>
+                            <div class="icon30"></div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <!-- 질문 박스 -->
+              <div class="questionbox_form">
+                <div class="questionbox_text">
+                  <h3>질문</h3>
+                  <p><span>0</span> / 500</p>
+                </div>
+                <!-- 질문 창 -->
+                <div class="question-box">
+                  <form action="." method="post">
+                    <textarea
+                      onkeyup="keyEvt()"
+                      spellcheck="false"
+                      name="text"
+                      maxlength="500"
+                      placeholder="예시.아픈게 다 나았는데도 약을 다 먹어야 할까요?"
+                    ></textarea>
+                  </form>
+                </div>
+                <!-- 체크박스 -->
+                <div class="check_box">
+                  <label
+                    ><input
+                      type="checkbox"
+                      name="checkbox_text"
+                      value="checkbox_text"
+                    />
+                    <span>현재 임신 중입니다.</span></label
+                  >
+                </div>
+              </div>
+              <!-- 사진 첨부 -->
+              <div class="Add_photo">
+                <h3>사진 첨부 [선택]</h3>
+                <p>증상과 관련된 사진을 최대 6장까지 첨부할 수 있어요.</p>
+                <div class="Add_button">
+                  <button type="button">
+                    <div class="plus"></div>
+                  </button>
+                  <input
+                    type="file"
+                    multiple=""
+                    accept="image/*"
+                    style="display: none"
+                  />
+                </div>
+              </div>
+              <!-- 안심하세요 (알림) -->
+              <div class="alarm">
+                <div class="alarm_service">
+                  <div class="alarm_title">
+                    <div class="bell_icon"></div>
+                    <h3>안심하세요!</h3>
+                  </div>
+                  <p>
+                    개인정보 노출의 위험이 있는 사진은 작성자와<br />
+                    의료진에게만 보일 수 있도록 처리해드립니다.
+                  </p>
+                </div>
+              </div>
+              <!-- 실시간 의료상담 운영 안내 사항 -->
+              <div class="notification">
+                <h3>실시간 의료 상담은 이렇게 운영 됩니다.</h3>
+                <div class="notification_text">
+                  <p>
+                    폭력적 / 공격적 / 비방 글 등 2회 이상 중복 된(도배성) 질문은
+                    예고 없이 삭제 될 수 있습니다.
+                  </p>
+                  <p>
+                    서비스 운영을 방해하는 행위가 반복적으로 발생할 경우, 회원
+                    및 의료진 보호를 위하여<br />
+                    서비스 이용이 한시적 또는 영구적으로 사전안내 없이 제한 될
+                    수 있습니다.
+                  </p>
+                  <p>
+                    결제 후 의료진에게 받은 질문의 내용과 답변은 비공개
+                    처리되니, 안심하세요.
+                  </p>
+                  <p>
+                    답변은 의학적 판단이나 진료 행위로 해석될 수 없으며,
+                    닥터나우와 답변 의료인은 이로 인해<br />
+                    발생하는 어떠한 책임도 지지 않아요.
+                  </p>
+                  <p>
+                    정확한 진단을 위해서는 원격진료를 신청하거나, 병원을 방문해
+                    주세요.
+                  </p>
+                  <p>
+                    의료진 판단 하에 비대면으로 답변이 어려운 질문은 환불이
+                    진행될 수 있습니다.
+                  </p>
+                  <p>
+                    의료진 판단 하에 비대면으로 답변이 어려운 질문은 환불이
+                    진행될 수 있습니다.
+                  </p>
+                  <p>
+                    실시간 의료상담에 등록하신 질문은 고객센터를 통한 삭제
+                    요청이 없는 한 지속적으로 남게 됩니다.
+                  </p>
+                </div>
+              </div>
+              <!-- 글 올리기 버튼 태그 -->
+              <div class="upload">
+                <button type="submit">글 올리기</button>
+              </div>
+            </div>
+          </div>
+          <!-- 오른쪽 -->
+          <div class="right">
+            <div class="right_top">
+              <h3>
+                혹시 그거 아세요?<br />
+                professional 앱에는<br />
+                더 많은 기능이 있어요!
+              </h3>
+              <p>나에게 맞는 정보도 알려드려요</p>
+
+              <a href="#">지금 다운로드 받기 ></a>
+
+              <div class="app_img">
+                <div></div>
+              </div>
+            </div>
+            <div class="right_bottom">
+              <h3>실시간 상담 베스트</h3>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>관리를 해도 계속 생기는 좁살 여드름..</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>여름철에 질염 관리하는 방법에 대해...</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>너무 반복되는 일상으로 우울증 극복...</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>치아 관리는 몇달에 한번 관리를 해야..</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>여름철 반려동물과 더위를 이기는 방법</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 풋터 -->
+      <footer>
+        <div class="foot">
+          <!-- 로고 -->
+          <h1>
+            <a href="/">
+              <div></div>
+              professional
+            </a>
+          </h1>
+          <!-- 풋터 메뉴 -->
+          <div class="foot_manu">
+            <a href="#">이용약관</a>
+
+            <a href="#">개인정보처리방침</a>
+
+            <a href="#">위치기반 서비스 이용약관</a>
+
+            <a href="#">서비스 이용약관</a>
+          </div>
+        </div>
+        <div class="bottom_copy">&copy; professional. All rights reserved.</div>
+      </footer>
+    </div>
+  </body>
+  <script>
+    function subject() {
+      // 과목 버튼을 누르면 과목 서브메뉴 나타내기
+      document.querySelector(".sel2 .submenu").style.display = "block";
+      document.querySelector(".sel2 .click_menu").style.display = "none";
+    }
+    // 증상 버튼을 누르면 증상 서브메뉴 나타내기
+    function symptoms() {
+      document.querySelector(".sel2 .submenu").style.display = "none";
+      document.querySelector(".sel2 .click_menu").style.display = "block";
+    }
+
+    function keyEvt() {
+      let txt = document.getElementsByTagName("textarea"); //textArea태그를 불러오는 변수
+      let msg = document.getElementsByTagName("span"); //span태그을 불러오는 변수
+      let maxText = document.querySelector(".questionbox_text > p");
+      let val = txt[0].value;
+
+      //색을 변경해주는 제어문
+      if (val.length <= 500 && val.length >= 0) {
+        // 만약 입력 내용이 0~500라면,
+        msg[0].style.color = "#000"; // span을 #000으로 한다.
+      }
+
+      //글자 제한, 글자 카운트
+      if (val.length >= 500) {
+        // 만약에 길이가 500이상이라면,
+        alert("500글자까지만 가능합니다."); //경고
+        txt[0].value = val.substr(0, 501); // 내용은, 너가 입력한 값의 500글자 까지만!
+        msg[0].innerHTML = "500";
+        maxText.style.color = "#000"; // 글자 수가 500까지 채워지면 p태그의 500수의 컬러를 #000으로 한다.
+      } else {
+        msg[0].innerHTML = val.length; //글자 길이가 실시간으로 올라간다.
+      }
+    }
+  </script>
+</html>

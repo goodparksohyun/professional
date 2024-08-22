@@ -77,20 +77,21 @@
 .middle_sec {
   width: 100%;
   height: 1080px;
-  background-color: rgb(252, 197, 179);
 }
 
 .middle_con {
-  width: 1600px;
+  width: 1686px;
   height: auto;
   margin: 0 auto;
-  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 40px 0px;
 }
 
 .middle_lefttext {
   width: 265px;
   height: 291px;
-  background-color: rgb(245, 178, 178);
 }
 
 .logo_text {
@@ -109,7 +110,7 @@
   width: fit-content;
   height: fit-content;
   background-color: #ffffff2e;
-  border: 0.5px solid #dedede;
+  border: 0.5px solid #dedede85;
   border-radius: 4px;
   box-sizing: border-box;
   padding: 5px 10px;
@@ -120,7 +121,7 @@
   color: #000000a8;
   display: flex;
   align-items: center;
-  justify-content: center;
+  line-height: 13px;
 }
 
 .search .icon9 {
@@ -154,6 +155,7 @@
   width: 20px;
   height: 20px;
   background: url("/img/sub1_img/sub1_sprites.png") -110px -50px;
+  background-repeat: no-repeat;
   margin-right: 10px;
 }
 
@@ -161,18 +163,21 @@
   width: 20px;
   height: 20px;
   background: url("/img/sub1_img/sub1_sprites.png") -110px -90px;
+  background-repeat: no-repeat;
   margin-right: 10px;
 }
 .move_page .icon12 {
   width: 20px;
   height: 20px;
   background: url("/img/sub1_img/sub1_sprites.png") -110px -10px;
+  background-repeat: no-repeat;
   margin-right: 10px;
 }
 .move_page .icon13 {
   width: 20px;
   height: 20px;
   background: url("/img/sub1_img/sub1_sprites.png") -110px -130px;
+  background-repeat: no-repeat;
   margin-right: 10px;
 }
 
@@ -181,21 +186,441 @@
   width: 265px;
   height: 26px;
   color: #000000a8;
-  font-weight: 400;
-  background-color: #f4f4f4;
-  border: 0.5px solid #dedede;
+  background-color: #f4f4f485;
+  border: 0.5px solid #dedede85;
   border-radius: 4px;
+  font-family: "Noto Sans KR", sans-serif;
 }
 
 .user_info {
   width: fit-content;
   height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
-  /* background-color: aquamarine; */
+  margin-top: 10px;
+  gap: 10px;
 }
 
 .user_info a {
-  width: 92px;
+  width: fit-content;
   height: 36px;
+  font-size: 14px;
+  color: #000000a8;
+  box-sizing: border-box;
+  padding: 11px;
   background-color: #ffffff2e;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+}
+
+/* 가운데 질문 모음 */
+
+.middle_question {
+  width: 1100px;
+  height: 1000px;
+  box-sizing: border-box;
+  padding: 20px 10px;
+}
+
+.middle_question .top {
+  width: fit-content;
+  height: fit-content;
+}
+
+.top p {
+  font-size: 14px;
+  color: #aeb3be;
+}
+
+.top .all {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.all h3 {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  margin-right: 14px;
+}
+
+.sel .subject {
+  font-size: 14px;
+  width: fit-content;
+  height: 22px;
+  color: #0000007d;
+  font-weight: 550;
+  background-color: #f4f4f485;
+  border: 0.5px solid #dedede85;
+  border-radius: 4px;
+  font-family: "Noto Sans KR", sans-serif;
+  position: relative;
+  padding: 2px 5px;
+  line-height: 22px;
+}
+
+/* 2차 메뉴 */
+.sel .submenu {
+  display: none;
+  width: 502px;
+  height: auto;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 30px;
+  padding-bottom: 5px;
+  border-radius: 20px;
+  border: 0.5px solid #d2d2d22b;
+  background-color: #fff;
+  top: 30px;
+  left: 0;
+}
+
+.sel .submenu > h2 {
+  width: 100%;
+  height: fit-content;
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #00000099;
+  padding-bottom: 12px;
+}
+
+.sel .submenu li {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+}
+
+.sel .submenu > li > .hospital > a {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.sel .submenu > li > .hospital > p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #aeb3be;
+}
+
+.sel .submenu > li > .hospital {
+  width: 50%;
+  height: fit-content;
+}
+
+.sel .submenu > li > .icon14 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -257px -80px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon15 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -150px -180px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon16 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -257px -150px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon17 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -80px -250px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon18 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -220px -250px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon19 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -150px -250px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon20 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -10px -180px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon21 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sprites.png") -327px -150px;
+  background-repeat: no-repeat;
+}
+
+.sel .submenu > li > .icon22 {
+  width: 50px;
+  height: 50px;
+  background: url("/img/sub1_img/sub1_sprites3.png") -80px -80px;
+  background-repeat: no-repeat;
+}
+
+.text_gather {
+  display: flex;
+  width: 1070px;
+  height: auto;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin-top: 40px;
+}
+
+.text_gather .text {
+  width: 498px;
+  height: fit-content;
+  margin-bottom: 70px;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.text h4 {
+  width: fit-content;
+  height: fit-content;
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.text > p {
+  width: fit-content;
+  height: fit-content;
+  line-height: 22px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #9ca1a7;
+}
+
+.text span {
+  width: fit-content;
+  height: fit-content;
+  box-sizing: border-box;
+  padding: 4px;
+  border: 0.5px solid #dedede;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #0000007d;
+}
+
+.icons_set {
+  width: 100%;
+  height: fit-content;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icons_set .icon_text {
+  width: fit-content;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.icons_set > .icon_text > p {
+  font-size: 16px;
+  color: #aeb3be;
+  margin-top: 1px;
+}
+
+.icon7 {
+  width: 30px;
+  height: 30px;
+  background: url("/img/sprites.png") -327px -220px;
+  background-repeat: no-repeat;
+}
+
+.icons_set .Just_before {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.icons_set > .Just_before > p {
+  font-size: 14px;
+  color: #aeb3be;
+}
+
+.icons_set > .Just_before > .circle {
+  width: 3px;
+  height: 15px;
+  margin-bottom: 2.5px;
+  margin-left: 10px;
+  background: url("/img/sub1_img/sub1_sprites.png") -150px -68px;
+  background-repeat: no-repeat;
+}
+
+/* 오른쪽 섹션 */
+
+.right {
+  width: fit-content;
+  width: fit-content;
+}
+
+.right_top {
+  width: 200px;
+  height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #fffef8;
+  border: 0.5px solid #dedede;
+  border-radius: 8px;
+}
+
+.right_top h3 {
+  font-size: 12px;
+  color: #000;
+  line-height: 16px;
+  margin-bottom: 5px;
+}
+
+.right_top p {
+  font-size: 10px;
+  color: #00000087;
+  margin-bottom: 5px;
+}
+
+.right_top a {
+  font-size: 10px;
+  color: #000000b8;
+}
+
+.right_top > .app_img > div {
+  width: 80px;
+  height: 150px;
+  background: url("/img/sub1_img/sub1_sprites2.png") -110px -10px;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.right_bottom {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 40px;
+}
+
+.right_bottom > h3 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.right_bottom1 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.right_bottom > .right_bottom1 > .icon10 {
+  width: 11px;
+  height: 11px;
+  background: url("/img/sub1_img/sub1_sprites2.png") -210px -99px;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+
+.right_bottom > .right_bottom1 > p {
+  font-size: 15px;
+  color: #000000a8;
+}
+
+/* 관련 페이지로 이동하는 a태그들에게 마우스 오버시 */
+.move_pagetext a:hover {
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+}
+
+/* 검색 버튼과 , 내 정보 보기, 로그인 하기 버튼 오버시 */
+.logo_text .search:hover,
+.user_info a:hover {
+  background-color: #d2d2d21f;
+  transition: 0.3s;
+}
+
+/* 앱 다운로드 버튼 오버시 */
+.btn button:hover {
+  background-color: #f4f4f4;
+  transition: 0.3s;
+}
+
+/* 과목 선택 버튼 오버시 */
+.sel .subject:hover {
+  background-color: #f4f4f4;
+  cursor: default;
+}
+
+/* 과목 선택 오버시 서브메뉴를 나타내라 */
+.sel .subject:hover .submenu {
+  display: block;
+  transition: 0.3s;
+}
+
+/* 서브메뉴안에 있는 li 마우스 오버시 */
+.sel .subject > .submenu > li:hover {
+  background-color: rgb(245, 246, 247, 0.41);
+}
+
+/* 실시간 상담 내용들 오버시 */
+.text_gather .text:hover {
+  background-color: rgb(245, 246, 247, 0.41);
+  border-radius: 8px;
+  transform: scale(1.1);
+  transition: 0.3s;
+  cursor: default;
+}
+
+/* 더보기 버튼 오버시 */
+.top2_text a:hover {
+  color: #d2d2d2;
+  transition: 0.3s;
+}
+
+/* 지금 다운로드 받기 버튼 오버시 */
+.right_top > a:hover {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* 실시간 상담 베스트 내용 오버시 */
+.right_bottom .right_bottom1 p:hover {
+  font-weight: bold;
+  color: #000;
+  transition: 0.3s;
+  cursor: default;
 }
