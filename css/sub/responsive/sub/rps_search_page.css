@@ -1,0 +1,346 @@
+/* 노트북 사이즈 */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 40px;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 20px 10px;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot_manu a {
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+}
+
+/* 노트북 미디엄 사이즈 */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 40px;
+  }
+
+  /* 통합 검색창 섹션 */
+  .search_con {
+    width: 100%;
+    padding: 110px 22px 0px;
+  }
+
+  /* 왼쪽 섹션 */
+  .middle_lefttext {
+    width: 230px;
+  }
+
+  .logo_text h1 {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .search a {
+    font-size: 13px;
+  }
+
+  .btn button {
+    width: 230px;
+  }
+
+  .user_info a {
+    height: 34px;
+    padding: 10px;
+  }
+
+  /* 중간 검색창 섹션 */
+  .middle_searchbox {
+    width: 700px;
+    padding: 15px 25px;
+  }
+
+  .pain_searchterm > .pain_searchterm_box span {
+    padding: 6px 7px;
+  }
+
+  /* 오른쪽 섹션 */
+  .right_bottom1 p {
+    width: 216px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 40px 10px;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot_manu a {
+    margin-right: 50px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+}
+
+/* 테블릿 사이즈 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+
+  /* 통합 검색창 섹션 섹션 */
+  .search_con {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* 왼쪽 섹션 */
+  .searchpage_lefttext {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo_text {
+    display: none;
+  }
+
+  .user_info {
+    display: none;
+  }
+
+  .btn button {
+    display: none;
+  }
+
+  .move_page {
+    width: 66%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 24px;
+    gap: 20px;
+    margin: 0 auto;
+  }
+
+  .move_page .move_pagetext {
+    width: calc(50% - 10px);
+    margin-bottom: 0;
+    box-sizing: border-box;
+    padding: 11px;
+    background-color: #ffffff2e;
+    border: 0.5px solid #dedede85;
+    border-radius: 4px;
+    text-align: center;
+  }
+
+  .move_page .move_pagetext:hover {
+    background-color: #d2d2d21f;
+    transition: 0.3s;
+  }
+
+  .move_page .icon10,
+  .move_page .icon11,
+  .move_page .icon12,
+  .move_page .icon13 {
+    margin-right: 7px;
+  }
+
+  /* 중간 검색창 섹션 */
+  .middle_searchbox {
+    width: 650px;
+    margin: 0 auto;
+  }
+
+  /* 오른쪽 섹션 */
+  .right {
+    display: none;
+  }
+
+  .right_bottom1 p {
+    width: 216px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 20px 10px;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot_manu a {
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+
+  .hader_wrap > nav > ul > li a {
+    display: none;
+  }
+
+  /* 통합 검색창 섹션 섹션 */
+  .search_con {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* 왼쪽 섹션 */
+  .searchpage_lefttext {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo_text {
+    display: none;
+  }
+
+  .user_info {
+    display: none;
+  }
+
+  .btn button {
+    display: none;
+  }
+
+  .move_page {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 24px;
+    gap: 20px;
+  }
+
+  .move_page .move_pagetext {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 11px;
+    background-color: #ffffff2e;
+    border: 0.5px solid #dedede85;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .move_page .icon10,
+  .move_page .icon11,
+  .move_page .icon12,
+  .move_page .icon13 {
+    margin-right: 7px;
+  }
+
+  .move_page .move_pagetext:hover {
+    background-color: #d2d2d21f;
+    transition: 0.3s;
+  }
+
+  /* 중간 검색창 섹션 */
+  .middle_searchbox {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .pain_searchterm > .pain_searchterm_box span {
+    padding: 6px;
+  }
+
+  /* 오른쪽 섹션 */
+  .right {
+    display: none;
+  }
+
+  .right_bottom1 p {
+    width: 216px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 20px 10px;
+  }
+
+  .foot {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .foot_manu a {
+    margin-right: 25px;
+    font-size: 12px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+
+  .bottom_copy {
+    font-size: 10px;
+    margin-top: 25px;
+  }
+}

@@ -89,6 +89,7 @@
   padding: 40px 0px;
 }
 
+/* 왼쪽 섹션 */
 .middle_lefttext {
   width: 265px;
   height: 291px;
@@ -221,7 +222,7 @@
   width: 1100px;
   height: 1000px;
   box-sizing: border-box;
-  padding: 20px 10px;
+  padding: 15px 10px;
 }
 
 .middle_question .top {

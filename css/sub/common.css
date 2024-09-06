@@ -18,6 +18,7 @@ header {
   height: 80px;
   z-index: 999;
   background: #fff;
+  position: fixed;
 }
 
 .hader_wrap {
@@ -111,6 +112,10 @@ h1 > a > div {
   transition: 0.3s;
 }
 
+main {
+  padding-top: 80px;
+}
+
 /* 풋터 */
 
 footer {
@@ -138,6 +143,10 @@ footer {
   margin-right: 105px;
   font-size: 16px;
   color: #aeb3be;
+}
+
+.foot_manu a:last-child {
+  margin-right: 0px;
 }
 
 .bottom_copy {

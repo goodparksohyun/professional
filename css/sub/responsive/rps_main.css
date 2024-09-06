@@ -1,0 +1,1217 @@
+/* 노트북 사이즈 */
+@media screen and (min-width: 1440px) and (max-width: 1600px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 40px;
+  }
+
+  /* 메인 비쥬얼 */
+  .main_visual {
+    height: 525px;
+  }
+
+  .main_visual .main_img img {
+    width: 100%;
+    column-gap: 30px;
+  }
+
+  /* 메인 비쥬얼 타이틀 묶음 */
+  .main_title {
+    left: 65%;
+    margin-left: -60%;
+    top: 200px;
+  }
+
+  .main_title1 > h2 {
+    font-size: 30px;
+  }
+
+  .main_title1 > p {
+    font-size: 17px;
+  }
+
+  /* 앱 버튼 */
+  .app_button > a {
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 15px;
+  }
+
+  /* 두번째 컨텐츠 영역 */
+  .con {
+    width: 100%;
+  }
+
+  /* 세번째 실시간 상담 섹션 */
+  .between_text {
+    box-sizing: border-box;
+    padding: 40px 0;
+  }
+
+  /* 다섯번째 서브 배너 */
+  .sub_banner {
+    height: 525px;
+  }
+
+  .sub_banner .sub_img img {
+    width: 100%;
+    height: 525px;
+  }
+
+  /* 서브 배너 타이틀 묶음 */
+  .sub_title {
+    margin-left: -35%;
+    top: 45%;
+  }
+
+  .sub_title1 > h2 {
+    font-size: 30px;
+  }
+
+  .sub_title1 > p {
+    font-size: 17px;
+  }
+
+  /* 여섯번째 펫테크 섹션 */
+  .five {
+    height: auto;
+  }
+
+  .gather {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  .top_maintext h4 {
+    font-size: 30px;
+  }
+
+  .top_maintext p {
+    font-size: 20px;
+  }
+
+  .boxs {
+    width: 100%;
+    gap: 20px;
+    justify-content: space-around;
+  }
+
+  .box {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+  }
+
+  .box_text h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .box_text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .box1 {
+    width: 100%;
+    height: 185px;
+    margin: 0 auto;
+    margin-top: 26px;
+    box-sizing: border-box;
+    padding: 0px 23px;
+  }
+
+  .box1 > h4 {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+
+  .imgs {
+    margin-top: 10px;
+    gap: 10px;
+    gap: 15px 25px;
+  }
+
+  .img1 {
+    width: 45%;
+  }
+
+  .img1 img {
+    border-radius: 6px;
+    width: 60px;
+  }
+
+  .pettech_text h4 {
+    font-size: 12px;
+  }
+
+  .pettech_text span {
+    font-size: 16px;
+  }
+
+  /* 마지막 섹션 */
+  .last {
+    height: auto;
+    padding-top: 80px;
+  }
+
+  .last_con {
+    width: 100%;
+  }
+
+  .last_toptext {
+    font-size: 30px;
+  }
+
+  .last_con img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .last_img {
+    width: 250px;
+  }
+
+  .last_imggather {
+    margin: 0 auto;
+    margin-top: 40px;
+    gap: 100px;
+  }
+
+  .last_text p {
+    font-size: 14px;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 40px 10px;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot_manu a {
+    margin-right: 50px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+}
+
+/* 노트북 미디엄 사이즈 */
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 40px;
+  }
+
+  /* 메인 비쥬얼 */
+  .main_visual {
+    height: 379px;
+  }
+
+  .main_visual .main_img img {
+    width: 100%;
+    height: 379px;
+  }
+
+  .main_visual .main_img {
+    height: 100%;
+  }
+
+  /* 메인 비쥬얼 타이틀 묶음 */
+  .main_title {
+    left: 65%;
+    margin-left: -60%;
+    top: 13%;
+    margin-top: 4%;
+  }
+
+  .main_title1 > h2 {
+    font-size: 165%;
+    line-height: 45px;
+  }
+
+  .main_title1 > p {
+    font-size: 100%;
+  }
+
+  /* 앱 버튼 */
+  .app_button {
+    margin-top: 15px;
+  }
+
+  .app_button > a {
+    width: 130px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+  }
+
+  /* 두번째 컨텐츠 영역 */
+  .con {
+    width: 100%;
+  }
+
+  .btn {
+    width: 220px;
+    height: 100px;
+  }
+
+  .btn h3 {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .btn p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .gra {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn .icon3,
+  .btn .icon4,
+  .btn .icon5,
+  .btn .icon6 {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .btn .icon3 {
+    margin-top: 10px;
+  }
+
+  /* 세번째 실시간 상담 섹션 */
+  .tree {
+    height: auto;
+    padding: 20px;
+  }
+
+  .con2 {
+    width: 100%;
+  }
+
+  .top_text {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .top_text h4 {
+    width: 130px;
+    font-size: 15px;
+    line-height: 35px;
+  }
+
+  .between_text {
+    width: 83vw;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
+
+  .top2_text {
+    width: 83vw;
+    margin-bottom: 30px;
+  }
+
+  .top2_text h4 {
+    font-size: 26px;
+  }
+
+  .top2_text a {
+    font-size: 16px;
+  }
+
+  .text_gather {
+    width: 83vw;
+    row-gap: 50px;
+  }
+
+  .text_gather .text {
+    width: 46%;
+    margin-bottom: 0;
+  }
+
+  .text h4 {
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .icon7 {
+    margin-right: 5px;
+  }
+
+  .icons_set p {
+    line-height: 31px;
+    font-size: 14px;
+  }
+
+  /* 네번째 건강 가이드 섹션 */
+  .for {
+    height: auto;
+    padding: 20px;
+  }
+
+  .con3 {
+    width: 100%;
+  }
+
+  .text_gather1 {
+    width: 84vw;
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+
+  .text_gather1 .text1 {
+    width: 46%;
+    height: 50%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .text1 h4 {
+    font-size: 16px;
+    line-height: 20px;
+    width: 296px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  .text1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .date p {
+    font-size: 14px;
+  }
+
+  /* 다섯번째 서브 배너 */
+  .sub_banner {
+    height: 379px;
+  }
+
+  .sub_banner .sub_img {
+    height: 100%;
+  }
+
+  .sub_banner .sub_img img {
+    width: 100%;
+    height: 379px;
+  }
+
+  /* 서브 배너 타이틀 묶음 */
+  .sub_title {
+    margin-left: -35%;
+    top: 45%;
+  }
+
+  .sub_title1 > h2 {
+    font-size: 138%;
+    line-height: 40px;
+  }
+
+  .sub_title1 > p {
+    font-size: 99%;
+  }
+
+  /* 여섯번째 박스 섹션 */
+  .five {
+    height: auto;
+  }
+
+  .gather {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  .top_maintext h4 {
+    font-size: 30px;
+  }
+
+  .top_maintext p {
+    font-size: 20px;
+  }
+
+  .boxs {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 50px;
+  }
+
+  .box1 {
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+
+  /* 마지막 섹션 */
+  .last {
+    height: auto;
+  }
+
+  .last_con {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .last_toptext {
+    font-size: 30px;
+  }
+
+  .last_imggather {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 35px;
+    column-gap: 50px;
+  }
+
+  .last_text h4 {
+    font-size: 20px;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 40px 10px;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot_manu a {
+    margin-right: 50px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+}
+
+/* 테블릿 사이즈 */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+
+  .hader_wrap > nav > ul > li a {
+    font-size: 18px;
+  }
+
+  /* 메인 비쥬얼 */
+  .main_visual {
+    height: 280px;
+  }
+
+  .main_visual .main_img img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .main_visual .main_img {
+    height: 100%;
+  }
+
+  /* 메인 비쥬얼 타이틀 묶음 */
+  .main_title {
+    left: 65%;
+    margin-left: -60%;
+    top: 15%;
+    margin-top: 4%;
+  }
+
+  .main_title1 > h2 {
+    font-size: 130%;
+    line-height: 30px;
+  }
+
+  .main_title1 > p {
+    font-size: 80%;
+  }
+
+  /* 앱 버튼 */
+  .app_button {
+    margin-top: -40px;
+  }
+
+  .app_button > a {
+    width: 115px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+  }
+
+  /* 두번째 섹션 */
+  .second {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .con {
+    width: 538px;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+    column-gap: 30px;
+  }
+
+  .btn {
+    width: 220px;
+    height: 100px;
+  }
+
+  .btn h3 {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .btn p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .gra {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn .icon3,
+  .btn .icon4,
+  .btn .icon5,
+  .btn .icon6 {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .btn .icon3 {
+    margin-top: 10px;
+  }
+
+  /* 세번째 실시간 상담 섹션 */
+  .tree {
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .con2 {
+    width: 100%;
+  }
+
+  .top_text {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .top_text h4 {
+    width: 130px;
+    font-size: 15px;
+    line-height: 35px;
+  }
+
+  .between_text {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
+
+  .top2_text {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .top2_text h4 {
+    font-size: 24px;
+  }
+
+  .top2_text a {
+    font-size: 15px;
+  }
+
+  .text_gather {
+    width: 100%;
+    row-gap: 45px;
+  }
+
+  .text_gather .text {
+    width: 47%;
+    margin-bottom: 0;
+  }
+
+  .text h4 {
+    font-size: 16px;
+    width: 320px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .icon7 {
+    margin-right: 5px;
+  }
+
+  .icons_set p {
+    line-height: 31px;
+    font-size: 14px;
+  }
+
+  /* 네번째 건강 가이드 섹션 */
+  .for {
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .con3 {
+    width: 100%;
+  }
+
+  .text_gather1 {
+    width: 100%;
+    row-gap: 50px;
+    justify-content: space-between;
+  }
+
+  .text_gather1 .text1 {
+    width: 48%;
+    height: 50%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .text1 h4 {
+    font-size: 16px;
+    line-height: 20px;
+    width: 230px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  .text1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .date p {
+    font-size: 14px;
+  }
+
+  /* 다섯번째 서브 배너 */
+  .sub_banner {
+    height: 280px;
+  }
+
+  .sub_banner .sub_img {
+    height: 100%;
+  }
+
+  .sub_banner .sub_img img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .sub_title {
+    margin-left: -36%;
+    top: 44%;
+  }
+
+  .sub_title1 > h2 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .sub_title1 > p {
+    font-size: 80%;
+  }
+
+  /* 여섯번째 박스 섹션 */
+  .five {
+    height: auto;
+  }
+
+  .gather {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  .top_maintext h4 {
+    font-size: 30px;
+  }
+
+  .top_maintext p {
+    font-size: 20px;
+  }
+
+  .boxs {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 50px;
+  }
+
+  .box1 {
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+
+  /* 마지막 섹션 */
+  .last {
+    height: auto;
+  }
+
+  .last_con {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .last_toptext {
+    font-size: 30px;
+  }
+
+  .last_imggather {
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 35px;
+    column-gap: 50px;
+  }
+
+  .last_text h4 {
+    font-size: 20px;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 20px 10px;
+  }
+
+  .foot {
+    width: 100%;
+  }
+
+  .foot_manu a {
+    margin-right: 30px;
+    font-size: 14px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+
+  .hader_wrap > nav > ul > li a {
+    display: none;
+  }
+
+  /* 메인 비쥬얼 */
+  .main_visual {
+    height: 175px;
+  }
+
+  .main_visual .main_img img {
+    width: 100%;
+    height: 175px;
+  }
+
+  .main_visual .main_img {
+    height: 100%;
+  }
+
+  /* 메인 비쥬얼 타이틀 묶음 */
+  .main_title {
+    left: 65%;
+    margin-left: -60%;
+    top: 30%;
+    margin-top: 4%;
+  }
+
+  .main_title1 {
+    height: auto;
+  }
+
+  .main_title1 > h2 {
+    font-size: 80%;
+    line-height: 20px;
+  }
+
+  .main_title1 > p {
+    font-size: 8px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  /* 앱 버튼 */
+  .app_button {
+    display: none;
+  }
+
+  .app_button > a {
+    width: 115px;
+    height: 36px;
+    line-height: 36px;
+    font-size: 12px;
+  }
+
+  /* 두번째 섹션 */
+  .second {
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .con {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: wrap;
+    gap: 30px;
+    column-gap: 25px;
+  }
+
+  .btn {
+    width: 210px;
+    height: 100px;
+  }
+
+  .btn h3 {
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .btn p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .gra {
+    width: 60px;
+    height: 60px;
+  }
+
+  .btn .icon3,
+  .btn .icon4,
+  .btn .icon5,
+  .btn .icon6 {
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+
+  .btn .icon3 {
+    margin-top: 10px;
+  }
+
+  /* 세번째 실시간 상담 섹션 */
+  .tree {
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .con2 {
+    width: 100%;
+  }
+
+  .top_text {
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .top_text h4 {
+    width: 130px;
+    font-size: 15px;
+    line-height: 35px;
+  }
+
+  .between_text {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px 0;
+  }
+
+  .top2_text {
+    width: 100%;
+    margin-bottom: 35px;
+  }
+
+  .top2_text h4 {
+    font-size: 24px;
+  }
+
+  .top2_text a {
+    font-size: 15px;
+  }
+
+  .text_gather {
+    width: 100%;
+    row-gap: 45px;
+    flex-direction: column;
+  }
+
+  .text_gather .text {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .text h4 {
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .icon7 {
+    margin-right: 5px;
+  }
+
+  .icons_set p {
+    line-height: 31px;
+    font-size: 14px;
+  }
+
+  /* 네번째 건강 가이드 섹션 */
+  .for {
+    height: auto;
+    padding: 20px 30px;
+  }
+
+  .con3 {
+    width: 100%;
+  }
+
+  .text_gather1 {
+    width: 100%;
+    row-gap: 45px;
+    flex-direction: column;
+  }
+
+  .text_gather1 .text1 {
+    width: 100%;
+    margin-bottom: 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .text1 h4 {
+    font-size: 16px;
+    line-height: 20px;
+    width: 320px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  .text1 p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .date p {
+    font-size: 14px;
+  }
+
+  /* 다섯번째 서브 배너 */
+  .sub_banner {
+    height: 175px;
+  }
+
+  .sub_banner .sub_img {
+    height: 100%;
+  }
+
+  .sub_banner .sub_img img {
+    width: 100%;
+    height: 175px;
+  }
+
+  .sub_title {
+    margin-left: -36%;
+    top: 44%;
+  }
+
+  .sub_title1 > h2 {
+    font-size: 70%;
+    line-height: 18px;
+  }
+
+  .sub_title1 > p {
+    font-size: 8px;
+    margin-top: 5px;
+    margin-right: 10px;
+  }
+
+  /* 여섯번째 박스 섹션 */
+  .five {
+    height: auto;
+  }
+
+  .gather {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 70px;
+  }
+
+  .top_maintext h4 {
+    font-size: 25px;
+  }
+
+  .top_maintext p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .boxs {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-flow: wrap;
+    gap: 50px;
+  }
+
+  .box1 {
+    margin: 0 auto;
+    margin-top: 26px;
+  }
+
+  .box_text h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* 마지막 섹션 */
+  .last {
+    height: auto;
+  }
+
+  .last_con {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  .last_toptext {
+    font-size: 25px;
+  }
+
+  .last_imggather {
+    width: 100%;
+    gap: 35px;
+    flex-direction: column;
+  }
+
+  .last_text h4 {
+    font-size: 20px;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 20px 10px;
+  }
+
+  .foot {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .foot_manu a {
+    margin-right: 25px;
+    font-size: 12px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+
+  .bottom_copy {
+    font-size: 10px;
+    margin-top: 25px;
+  }
+}

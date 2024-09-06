@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>통합 검색</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/sub/common.css" />
+    <link rel="icon" href="../img/favicon.png" />
+    <link rel="stylesheet" href="../css/sub/search_page.css" />
+    <link
+      rel="stylesheet"
+      href="../css/sub/responsive/sub/rps_search_page.css"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="hader_wrap">
+          <!-- 로고 -->
+          <h1>
+            <a href="/">
+              <div></div>
+              professional
+            </a>
+          </h1>
+          <!-- 메뉴 -->
+          <nav>
+            <ul>
+              <li>
+                <a href="#">회사소개</a>
+              </li>
+              <li>
+                <a href="#">제휴신청</a>
+              </li>
+              <li>
+                <a href="#">고객센터</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- 아이콘 -->
+          <div class="icon">
+            <a href="#"><div class="icon1"></div></a>
+            <a href="#"><div class="icon2"></div></a>
+          </div>
+        </div>
+      </header>
+      <!-- 중간 통합 검색창 섹션 -->
+      <section class="search_sec">
+        <div class="search_con">
+          <div class="searchpage_lefttext">
+            <div class="logo_text">
+              <!-- 로고 -->
+              <h1>
+                <a href="/">
+                  <div></div>
+                  professional
+                </a>
+              </h1>
+              <div class="search">
+                <a href="#">
+                  <div class="icon9"></div>
+                  검색
+                </a>
+              </div>
+            </div>
+            <!-- 관련 페이지로 이동하는 a태그들-->
+            <div class="move_page">
+              <div class="move_pagetext">
+                <a href="/sub/Find_hospital.html"
+                  ><div class="icon10"></div>
+                  병원 찾기</a
+                >
+              </div>
+              <div class="move_pagetext">
+                <a href="/sub/medical.html"
+                  ><div class="icon11"></div>
+                  실시간 의료 상담</a
+                >
+              </div>
+              <div class="move_pagetext">
+                <a href="/sub/counsel.html"
+                  ><div class="icon12"></div>
+                  바로 질문하기</a
+                >
+              </div>
+              <div class="move_pagetext">
+                <a href="/sub/Health_Guide.html"
+                  ><div class="icon13"></div>
+                  건강 가이드</a
+                >
+              </div>
+              <div class="btn">
+                <button type="button">앱 다운로드</button>
+              </div>
+              <div class="user_info">
+                <a href="#">내 정보 보기</a>
+                <a href="#">로그인 하기</a>
+              </div>
+            </div>
+          </div>
+          <!-- 중간 검색창 섹션-->
+          <div class="middle_searchbox">
+            <div class="top">
+              <p>홈 > 통합검색</p>
+            </div>
+            <!-- 검색창 박스 -->
+            <div class="searchbox">
+              <form action="." method="post">
+                <input
+                  type="text"
+                  name="searchword"
+                  id="searchword"
+                  placeholder="증상, 질병, 병원을 검색하세요"
+                  spellcheck="false"
+                />
+                <div class="searchbox_icons">
+                  <img
+                    src="../img/search_page.img/X_big_icon.png"
+                    alt="X"
+                    class="X_icon"
+                    id="x_icon"
+                    onclick="deleteWord()"
+                  />
+                  <img
+                    src="../img/search_page.img/searchbar.png"
+                    alt="검색바"
+                    class="search"
+                    onclick="appendKeyword()"
+                  />
+                </div>
+              </form>
+            </div>
+            <!-- 최근 검색어 -->
+            <div class="new_searchterm">
+              <div class="new_searchterm_toptext">
+                <h3>최근 검색어</h3>
+                <h4 class="all_delet">전체 삭제</h4>
+              </div>
+              <div class="searchterm_undertext">
+                <div class="my_searchtermbox">
+                  <p>감기</p>
+                  <img
+                    src="../img/search_page.img/x_small_icon.png"
+                    alt="x"
+                    class="close_keyword"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- 많이 검색 된 질병 -->
+            <div class="pain_searchterm">
+              <h3>많이 검색된 질병</h3>
+              <div class="pain_searchterm_box">
+                <span>감기</span>
+                <span>생리통</span>
+                <span>여드름</span>
+                <span>비염</span>
+                <span>알레르기</span>
+                <span>탈모</span>
+                <span>관절염</span>
+              </div>
+            </div>
+            <!-- 많이 검색된 증상 -->
+            <div class="symptoms_searchterm">
+              <h3>많이 검색된 증상</h3>
+              <div class="symptoms_searchterm_order">
+                <div class="oder_text">
+                  <span>1</span>
+                  <p>어지럼증</p>
+                </div>
+                <div class="oder_text">
+                  <span>2</span>
+                  <p>탈모</p>
+                </div>
+                <div class="oder_text">
+                  <span>3</span>
+                  <p>방광염</p>
+                </div>
+                <div class="oder_text">
+                  <span>4</span>
+                  <p>피부 건조증</p>
+                </div>
+                <div class="oder_text">
+                  <span>5</span>
+                  <p>여드름</p>
+                </div>
+                <div class="oder_text">
+                  <span>6</span>
+                  <p>불면증</p>
+                </div>
+                <div class="oder_text">
+                  <span>7</span>
+                  <p>두통</p>
+                </div>
+                <div class="oder_text">
+                  <span>8</span>
+                  <p>소화 불량</p>
+                </div>
+                <div class="oder_text">
+                  <span>9</span>
+                  <p>알레르기</p>
+                </div>
+                <div class="oder_text">
+                  <span>10</span>
+                  <p>관절염</p>
+                </div>
+                <div class="oder_text">
+                  <span>11</span>
+                  <p>화상</p>
+                </div>
+                <div class="oder_text">
+                  <span>12</span>
+                  <p>무좀</p>
+                </div>
+                <div class="oder_text">
+                  <span>13</span>
+                  <p>우울증</p>
+                </div>
+                <div class="oder_text">
+                  <span>14</span>
+                  <p>비염</p>
+                </div>
+                <div class="oder_text">
+                  <span>15</span>
+                  <p>복통</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 오른쪽 -->
+          <div class="right">
+            <div class="right_top">
+              <h3>
+                혹시 그거 아세요?<br />
+                professional 앱에는<br />
+                더 많은 기능이 있어요!
+              </h3>
+              <p>나에게 맞는 정보도 알려드려요</p>
+
+              <a href="#">지금 다운로드 받기 ></a>
+
+              <div class="app_img">
+                <div></div>
+              </div>
+            </div>
+            <div class="right_bottom">
+              <h3>실시간 상담 베스트</h3>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>관리를 해도 계속 생기는 좁살 여드름..</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>여름철에 질염 관리하는 방법에 대해...</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>너무 반복되는 일상으로 우울증 극복...</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>치아 관리는 몇달에 한번 관리를 해야..</p>
+              </div>
+              <div class="right_bottom1">
+                <div class="icon10"></div>
+                <p>여름철 반려동물과 더위를 이기는 방법</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 풋터 -->
+      <footer>
+        <div class="foot">
+          <!-- 로고 -->
+          <h1>
+            <a href="/">
+              <div></div>
+              professional
+            </a>
+          </h1>
+          <!-- 풋터 메뉴 -->
+          <div class="foot_manu">
+            <a href="#">이용약관</a>
+
+            <a href="#">개인정보처리방침</a>
+
+            <a href="#">위치기반 서비스 이용약관</a>
+
+            <a href="#">서비스 이용약관</a>
+          </div>
+        </div>
+        <div class="bottom_copy">&copy; professional. All rights reserved.</div>
+      </footer>
+    </div>
+    <script src="../js/sub/jq_search_page.js"></script>
+  </body>
+</html>

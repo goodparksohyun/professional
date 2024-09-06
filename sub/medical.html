@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/sub/common.css" />
     <link rel="icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="../css/sub/medical.css" />
+    <link rel="stylesheet" href="../css/sub/responsive/sub/rps_medical.css" />
   </head>
   <body>
     <div id="wrap">
@@ -23,9 +24,6 @@
           <!-- 메뉴 -->
           <nav>
             <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
               <li>
                 <a href="#">회사소개</a>
               </li>
@@ -59,7 +57,7 @@
                 <img src="/img/sub1_img/sub_bannerimg.png" alt="사람" />
               </div>
               <div class="left_btn">
-                <a href="#">
+                <a href="../sub/counsel.html">
                   <div class="left_text">
                     <h3>지금 내 건강상태가 궁금해요.</h3>
                     <p>실시간 의료 상담하기</p>
@@ -230,7 +228,7 @@
                   <h4>아무렇지도 않다가 오늘 갑자기 목이 따끔하고 칼칼해요.</h4>
                   <p>
                     여름이라 에어컨 바람을 많이 쎄서 그런지 괜찮다가 갑자기
-                    목이<br />
+                    목이<br class="onlyPC" />
                     칼칼하면서 따끔따끔하고 열도 나는 것 같은데 코로나는
                     아니겠져
                   </p>
@@ -252,7 +250,7 @@
                   </h4>
                   <p>
                     약속이 생겨 나가려는 도중에 부모님이 큰소리로 저를 불러서
-                    <br />
+                    <br class="onlyPC" />
                     눈을 떠보니 제가 쓰러져있었어요.
                   </p>
                   <span>어지럼증</span>
@@ -273,7 +271,7 @@
                   </h4>
                   <p>
                     제가 앉아있는 시간도 길고 여름이라 땀이 차서 그런지
-                    아랫쪽이<br />
+                    아랫쪽이<br class="onlyPC" />
                     심하게 간지러운데 질염이나 균이 생긴건 아니겠죠?
                   </p>
                   <span>산부인과</span>
@@ -291,7 +289,9 @@
                 <div class="text">
                   <h4>너무 반복되는 일상생활로 인해 너무 지치고 힘들어요..</h4>
                   <p>
-                    요즘 너무 지치고 힘들어요 사람들이랑 이야기하다가 갑자기<br />
+                    요즘 너무 지치고 힘들어요 사람들이랑 이야기하다가 갑자기<br
+                      class="onlyPC"
+                    />
                     눈물이 흐르기도 하고 저를 공감해주는 말들을 들어도 눈물이
                     나요.
                   </p>
@@ -311,7 +311,7 @@
                   <h4>아무렇지도 않다가 오늘 갑자기 목이 따끔하고 칼칼해요.</h4>
                   <p>
                     여름이라 에어컨 바람을 많이 쎄서 그런지 괜찮다가 갑자기
-                    목이<br />
+                    목이<br class="onlyPC" />
                     칼칼하면서 따끔따끔하고 열도 나는 것 같은데 코로나는
                     아니겠져
                   </p>
@@ -333,7 +333,7 @@
                   </h4>
                   <p>
                     약속이 생겨 나가려는 도중에 부모님이 큰소리로 저를 불러서
-                    <br />
+                    <br class="onlyPC" />
                     눈을 떠보니 제가 쓰러져있었어요.
                   </p>
                   <span>어지럼증</span>
@@ -354,7 +354,7 @@
                   </h4>
                   <p>
                     제가 앉아있는 시간도 길고 여름이라 땀이 차서 그런지
-                    아랫쪽이<br />
+                    아랫쪽이<br class="onlyPC" />
                     심하게 간지러운데 질염이나 균이 생긴건 아니겠죠?
                   </p>
                   <span>산부인과</span>
@@ -372,7 +372,9 @@
                 <div class="text">
                   <h4>너무 반복되는 일상생활로 인해 너무 지치고 힘들어요..</h4>
                   <p>
-                    요즘 너무 지치고 힘들어요 사람들이랑 이야기하다가 갑자기<br />
+                    요즘 너무 지치고 힘들어요 사람들이랑 이야기하다가 갑자기<br
+                      class="onlyPC"
+                    />
                     눈물이 흐르기도 하고 저를 공감해주는 말들을 들어도 눈물이
                     나요.
                   </p>
@@ -458,4 +460,12 @@
       </footer>
     </div>
   </body>
+  <script>
+    document
+      .querySelector(".sel .subject")
+      .addEventListener("click", function () {
+        var submenu = document.querySelector(".sel .submenu");
+        submenu.classList.toggle("active");
+      });
+  </script>
 </html>
