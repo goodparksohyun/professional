@@ -42,14 +42,8 @@
     padding: 0px 40px;
   }
 
-  /* 통합 검색창 섹션 */
-  .search_con {
-    width: 1020px;
-    padding: 110px 22px 0px;
-  }
-
   /* 왼쪽 섹션 */
-  .middle_lefttext {
+  .counsel_lefttext {
     width: 230px;
   }
 
@@ -71,14 +65,24 @@
     padding: 10px;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
-    width: 100%;
-    padding: 15px 30px;
+  /* 중간 바로 질문하기 섹션 */
+  .counsel_con {
+    width: 1020px;
+    gap: 18px;
+    padding: 110px 22px 20px;
   }
 
-  .pain_searchterm > .pain_searchterm_box span {
-    padding: 6px 7px;
+  .middle_counsel {
+    width: 478px;
+  }
+
+  /* 2차 메뉴 */
+  .sel2 .subject_aake > .submenu {
+    left: -23px;
+  }
+
+  .sel2 .subject_aake > .click_menu {
+    left: -23px;
   }
 
   /* 오른쪽 섹션 */
@@ -122,14 +126,20 @@
     padding: 0px 20px;
   }
 
-  /* 통합 검색창 섹션 섹션 */
-  .search_con {
+  /* 중간 바로 질문하기 섹션 */
+  .counsel_con {
     width: 100%;
+    padding: 110px 22px 20px;
     flex-direction: column;
   }
 
+  .middle_counsel {
+    width: 478px;
+    margin: 0 auto;
+  }
+
   /* 왼쪽 섹션 */
-  .searchpage_lefttext {
+  .counsel_lefttext {
     width: 100%;
     height: auto;
   }
@@ -182,24 +192,95 @@
     margin-right: 7px;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
-    width: 500px;
-    margin: 0 auto;
+  /* 2차 메뉴 */
+  .sel2 .subject_aake {
+    font-size: 13px;
+  }
+
+  .sel2 .subject_aake .click_menu {
+    width: 430px;
+    height: 730px;
+    padding: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: -2%;
+  }
+  /* 
+  .sel2 .subject_aake > .submenu {
+    width: 430px;
+    height: 810px;
+    padding: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 192%;
+    transform: translate(-50%, 100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 9;
+  }
+ 
+  .sel2 .submenu.active {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  } */
+
+  .sel2 .submenu > h2 {
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00000099;
+    padding-bottom: 12px;
+  }
+
+  .sel2 .submenu li,
+  .sel2 .click_menu li {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
+
+  .sel2 .submenu > li > .hospital > a,
+  .sel2 .click_menu > li > .hospital > a {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .sel2 .submenu > li > .hospital,
+  .sel2 .click_menu > li > .hospital {
+    width: 50%;
+    height: fit-content;
+  }
+
+  .sel2 .submenu > h2,
+  .sel2 .click_menu > h2 {
+    font-size: 20px;
+  }
+
+  .sel2 .submenu li,
+  .sel2 .click_menu li {
+    height: 55px;
+    gap: 80px;
+  }
+
+  .sel2 .submenu > li > .hospital > p,
+  .sel2 .click_menu > li > .hospital > p {
+    font-size: 14px;
   }
 
   /* 오른쪽 섹션 */
   .right {
     display: none;
-  }
-
-  .right_bottom1 p {
-    width: 216px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
   }
 
   /* 풋터 */
@@ -224,6 +305,10 @@
 
 /* 모바일 사이즈 */
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  br.onlyPC {
+    display: none;
+  }
+
   /* 헤더 */
   .hader_wrap {
     width: 100%;
@@ -238,14 +323,20 @@
     display: none;
   }
 
-  /* 통합 검색창 섹션 섹션 */
-  .search_con {
+  /* 중간 바로 질문하기 섹션 */
+  .counsel_con {
     width: 100%;
     flex-direction: column;
   }
 
+  .middle_counsel {
+    width: 478px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
   /* 왼쪽 섹션 */
-  .searchpage_lefttext {
+  .counsel_lefttext {
     width: 100%;
     height: auto;
   }
@@ -296,33 +387,70 @@
     transition: 0.3s;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
-    width: 478px;
-    margin: 0 auto;
+  .notification > .notification_text {
+    width: 100%;
   }
 
-  .pain_searchterm > .pain_searchterm_box span {
-    padding: 6px;
+  /* 2차 메뉴 */
+  .sel2 .subject_aake {
+    font-size: 13px;
+  }
+  .sel2 .subject_aake .click_menu {
+    width: 430px;
+    height: 810px;
+    padding: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 96%;
+    transform: translate(-25%, 0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 9;
   }
 
-  /* 글자 묶음 */
-  .text_gather .text_gather1 .text_wrap {
-    width: 80%;
+  /* 
+  .sel2 .subject_aake > .submenu {
+      width: 430px;
+      height: 810px;
+      padding: 20px;
+      position: absolute;
+      bottom: 100px;
+      left: 96%;
+      transform: translate(-25%, 100%);
+      transition: transform 0.5s ease, opacity 0.5s ease;
+      z-index: 9;
+    }
+
+  .sel2 .submenu.active {
+    transform: translate(-25%, 0);
+    opacity: 1;
+  } */
+
+  .sel2 .submenu > h2 {
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00000099;
+    padding-bottom: 12px;
+  }
+
+  .sel2 .submenu li,
+  .sel2 .click_menu li {
+    height: 55px;
+    gap: 80px;
+  }
+
+  .sel2 .submenu > li > .hospital > p,
+  .sel2 .click_menu > li > .hospital > p {
+    font-size: 14px;
   }
 
   /* 오른쪽 섹션 */
   .right {
     display: none;
-  }
-
-  .right_bottom1 p {
-    width: 216px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
   }
 
   /* 풋터 */
@@ -352,6 +480,10 @@
 }
 
 @media screen and (max-width: 480px) {
+  br.onlyPC {
+    display: none;
+  }
+
   /* 헤더 */
   .hader_wrap {
     width: 100%;
@@ -366,14 +498,20 @@
     display: none;
   }
 
-  /* 통합 검색창 섹션 섹션 */
-  .search_con {
+  /* 중간 바로 질문하기 섹션 */
+  .counsel_con {
     width: 100%;
     flex-direction: column;
   }
 
+  .middle_counsel {
+    width: 478px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+
   /* 왼쪽 섹션 */
-  .searchpage_lefttext {
+  .counsel_lefttext {
     width: 100%;
     height: auto;
   }
@@ -424,28 +562,69 @@
     transition: 0.3s;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
+  .notification > .notification_text {
     width: 100%;
-    margin: 0 auto;
   }
 
-  .pain_searchterm > .pain_searchterm_box span {
-    padding: 6px;
+  /* 2차 메뉴 */
+  .sel2 .subject_aake {
+    font-size: 13px;
+  }
+
+  /* .sel2 .subject_aake > .submenu {
+    width: 430px;
+    height: 810px;
+    padding: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 96%;
+    transform: translate(-25%, 100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 9;
+  } .sel2 .submenu.active {
+    transform: translate(-25%, 0);
+    opacity: 1;
+  }*/
+
+  .sel2 .subject_aake .click_menu {
+    width: 430px;
+    height: 810px;
+    padding: 20px;
+    position: absolute;
+    bottom: 100px;
+    left: 96%;
+    transform: translate(-25%, 0);
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    z-index: 9;
+  }
+
+  .sel2 .submenu > h2 {
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00000099;
+    padding-bottom: 12px;
+  }
+
+  .sel2 .submenu li,
+  .sel2 .click_menu li {
+    height: 55px;
+    gap: 80px;
+  }
+
+  .sel2 .submenu > li > .hospital > p,
+  .sel2 .click_menu > li > .hospital > p {
+    font-size: 14px;
   }
 
   /* 오른쪽 섹션 */
   .right {
     display: none;
-  }
-
-  .right_bottom1 p {
-    width: 216px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
   }
 
   /* 풋터 */

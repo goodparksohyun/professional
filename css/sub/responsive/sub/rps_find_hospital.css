@@ -42,14 +42,15 @@
     padding: 0px 40px;
   }
 
-  /* 통합 검색창 섹션 */
-  .search_con {
+  /* 중간 병원 찾기 섹션 */
+  .hospital_con {
     width: 1020px;
-    padding: 110px 22px 0px;
+    gap: 18px;
+    padding: 110px 22px 20px;
   }
 
   /* 왼쪽 섹션 */
-  .middle_lefttext {
+  .hospital_lefttext {
     width: 230px;
   }
 
@@ -71,14 +72,22 @@
     padding: 10px;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
-    width: 100%;
-    padding: 15px 30px;
+  /* 가운데 병원 과목 선택 box 섹션 */
+  .middle_subject {
+    width: 478px;
   }
 
-  .pain_searchterm > .pain_searchterm_box span {
-    padding: 6px 7px;
+  .subject_gather {
+    width: 100%;
+  }
+
+  .subject_gather > .box_gather {
+    width: 448px;
+  }
+
+  /* 인기 검색어 카테고리 */
+  .best_category > .category_box2 span {
+    padding: 6px 3px;
   }
 
   /* 오른쪽 섹션 */
@@ -122,14 +131,16 @@
     padding: 0px 20px;
   }
 
-  /* 통합 검색창 섹션 섹션 */
-  .search_con {
+  /* 중간 병원 찾기 섹션 */
+  .hospital_con {
     width: 100%;
+    gap: 18px;
+    padding: 110px 22px 20px;
     flex-direction: column;
   }
 
   /* 왼쪽 섹션 */
-  .searchpage_lefttext {
+  .hospital_lefttext {
     width: 100%;
     height: auto;
   }
@@ -182,24 +193,28 @@
     margin-right: 7px;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
-    width: 500px;
+  /* 가운데 병원 과목 선택 box 섹션 */
+  .middle_subject {
+    width: 478px;
     margin: 0 auto;
+  }
+
+  .subject_gather {
+    width: 100%;
+  }
+
+  .subject_gather > .box_gather {
+    width: 448px;
+  }
+
+  /* 인기 검색어 카테고리 */
+  .best_category > .category_box2 span {
+    padding: 6px 3px;
   }
 
   /* 오른쪽 섹션 */
   .right {
     display: none;
-  }
-
-  .right_bottom1 p {
-    width: 216px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
   }
 
   /* 풋터 */
@@ -238,14 +253,15 @@
     display: none;
   }
 
-  /* 통합 검색창 섹션 섹션 */
-  .search_con {
+  /* 중간 병원 찾기 섹션 */
+  .hospital_con {
     width: 100%;
+    gap: 15px;
     flex-direction: column;
   }
 
   /* 왼쪽 섹션 */
-  .searchpage_lefttext {
+  .hospital_lefttext {
     width: 100%;
     height: auto;
   }
@@ -296,33 +312,28 @@
     transition: 0.3s;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
+  /* 가운데 병원 과목 선택 box 섹션 */
+  .middle_subject {
     width: 478px;
     margin: 0 auto;
   }
 
-  .pain_searchterm > .pain_searchterm_box span {
-    padding: 6px;
+  .subject_gather {
+    width: 100%;
   }
 
-  /* 글자 묶음 */
-  .text_gather .text_gather1 .text_wrap {
-    width: 80%;
+  .subject_gather > .box_gather {
+    width: 448px;
+  }
+
+  /* 인기 검색어 카테고리 */
+  .best_category > .category_box2 span {
+    padding: 6px 3px;
   }
 
   /* 오른쪽 섹션 */
   .right {
     display: none;
-  }
-
-  .right_bottom1 p {
-    width: 216px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
   }
 
   /* 풋터 */
@@ -366,14 +377,15 @@
     display: none;
   }
 
-  /* 통합 검색창 섹션 섹션 */
-  .search_con {
+  /* 중간 병원 찾기 섹션 */
+  .hospital_con {
     width: 100%;
+    gap: 15px;
     flex-direction: column;
   }
 
   /* 왼쪽 섹션 */
-  .searchpage_lefttext {
+  .hospital_lefttext {
     width: 100%;
     height: auto;
   }
@@ -424,28 +436,28 @@
     transition: 0.3s;
   }
 
-  /* 중간 검색창 섹션 */
-  .middle_searchbox {
-    width: 100%;
+  /* 가운데 병원 과목 선택 box 섹션 */
+  .middle_subject {
+    width: 478px;
     margin: 0 auto;
   }
 
-  .pain_searchterm > .pain_searchterm_box span {
-    padding: 6px;
+  .subject_gather {
+    width: 100%;
+  }
+
+  .subject_gather > .box_gather {
+    width: 448px;
+  }
+
+  /* 인기 검색어 카테고리 */
+  .best_category > .category_box2 span {
+    padding: 6px 3px;
   }
 
   /* 오른쪽 섹션 */
   .right {
     display: none;
-  }
-
-  .right_bottom1 p {
-    width: 216px;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    word-break: break-all;
   }
 
   /* 풋터 */

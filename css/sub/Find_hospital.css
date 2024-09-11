@@ -5,11 +5,11 @@ header {
   border-bottom: 0.5px solid #00000005;
 }
 
-/* 건강 가이드 섹션 */
+/* 중간 병원 찾기 섹션 */
 
 .hospital_sec {
   width: 100%;
-  height: 830px;
+  height: auto;
 }
 
 .hospital_con {
@@ -19,7 +19,8 @@ header {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-top: 40px;
+  padding-top: 110px;
+  padding-bottom: 20px;
 }
 
 .hospital_lefttext {
@@ -150,8 +151,8 @@ header {
 
 /* 가운데 병원 과목 선택 box 섹션 */
 .middle_subject {
-  width: fit-content;
-  height: 830px;
+  width: 711px;
+  height: auto;
   box-sizing: border-box;
   padding: 15px;
 }
@@ -178,13 +179,6 @@ header {
   font-size: 30px;
   color: #000;
   font-weight: bold;
-}
-
-/* 가운데 병원 과목 선택 box 섹션 */
-.middle_subject {
-  width: 711px;
-  height: fit-content;
-  /* background-color: aliceblue; */
 }
 
 .subject_gather > p {

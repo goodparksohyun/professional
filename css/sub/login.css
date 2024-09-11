@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+/* 로그인 창 묶음 */
+.login-container {
+  width: 400px;
+  height: auto;
+  background-color: #fffef8;
+  border: 0.5px solid #dedede;
+}
+
+/* 로고 */
+h1 > a > div {
+  width: 40px;
+  height: 53px;
+  float: left;
+  line-height: 24px;
+  background: url(../../img/sprites.png) -60px 7px;
+  background-repeat: no-repeat;
+  background-size: 250px;
+}

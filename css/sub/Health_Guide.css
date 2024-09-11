@@ -215,6 +215,7 @@ header {
 
 .text_wrap {
   float: left;
+  width: 80%;
 }
 
 .text1 h4 {
@@ -231,6 +232,10 @@ header {
   line-height: 22px;
   font-size: 18px;
   color: #9ca1a7;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
 }
 
 .date {

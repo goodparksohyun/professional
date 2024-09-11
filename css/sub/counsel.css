@@ -8,7 +8,7 @@ header {
 /* 바로 질문하기 섹션 */
 .counsel_sec {
   width: 100%;
-  height: 1142px;
+  height: auto;
 }
 
 .counsel_con {
@@ -18,10 +18,11 @@ header {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
-  padding-top: 40px;
+  padding-top: 110px;
+  padding-bottom: 20px;
 }
 
-.hospital_lefttext {
+.counsel_lefttext {
   width: 265px;
   height: 291px;
 }
@@ -195,7 +196,7 @@ header {
 
 .sel2 .subject_aake {
   font-size: 14px;
-  width: fit-content;
+  width: 109px;
   height: 22px;
   color: #0000007d;
   font-weight: 550;
@@ -209,23 +210,51 @@ header {
 }
 
 /* 2차 메뉴 */
-.sel2 .subject_aake > .submenu {
-  display: none;
-  width: 502px;
-  height: auto;
+.sel2 .subject_aake .list_all {
   position: absolute;
+  top: 30px;
+  left: -1px;
+  width: 502px;
+  height: 845px;
   box-sizing: border-box;
   padding: 30px;
   padding-bottom: 5px;
   border-radius: 20px;
   border: 0.5px solid #d2d2d22b;
   background-color: #fff;
-  top: 30px;
-  left: -1px;
-  z-index: 8;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: 9;
+  display: none;
+}
+.sel2 .subject_aake .list_all.on {
+  transform: translateY(0);
+  display: block;
+}
+.submenu_all {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+.submenu_all > ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: fit-content;
 }
 
-.sel2 .submenu > .submenutop_title {
+.submenu_all > ul.click_menu {
+  display: none;
+}
+
+.sel2 .subject_aake .list_all .submenu .active {
+  transform: translateY(0);
+  display: block;
+}
+
+.sel2 .list_all .submenutop_title {
   width: 100%;
   height: auto;
   display: flex;
@@ -234,7 +263,7 @@ header {
   column-gap: 30px;
 }
 
-.sel2 .submenu > .submenutop_title button {
+.sel2 .list_all > .submenutop_title button {
   width: 35%;
   height: fit-content;
   font-size: 18px;
@@ -249,7 +278,7 @@ header {
   font-family: "Noto Sans KR", sans-serif;
 }
 
-.sel2 .submenu li {
+.sel2 .list_all .submenu li {
   width: 100%;
   height: fit-content;
   margin-bottom: 25px;
@@ -259,7 +288,7 @@ header {
   gap: 150px;
 }
 
-.sel2 .submenu > li > .hospital > a {
+.sel2 .list_all .submenu > li > .hospital > a {
   font-size: 18px;
   font-weight: bold;
   display: block;
@@ -267,19 +296,19 @@ header {
   color: #000;
 }
 
-.sel2 .submenu > li > .hospital > p {
+.sel2 .list_all .submenu > li > .hospital > p {
   font-size: 16px;
   font-weight: 400;
   color: #aeb3be;
 }
 
-.sel2 .submenu > li > .hospital {
+.sel2 .list_all .submenu > li > .hospital {
   width: 50%;
   height: fit-content;
 }
 
 /* 과목 서브메뉴 클릭시 글자 굵기, 줄 컬러 변경하기 */
-.submenu > .submenutop_title > #on {
+.submenutop_title > #subject_btn.on {
   font-weight: bold;
   border-bottom: 2px solid #000000e3;
 }
@@ -348,44 +377,17 @@ header {
 }
 
 /* 클릭하면 보이는 서브메뉴 */
-.sel2 .subject_aake > .click_menu {
-  display: none;
+.sel2 .list_all .click_menu {
   width: 502px;
-  height: auto;
+  height: 100%;
   position: absolute;
   box-sizing: border-box;
   padding: 30px;
-  padding-bottom: 5px;
-  border-radius: 20px;
-  border: 0.5px solid #d2d2d22b;
-  background-color: #fff;
-  top: 30px;
-  left: -1px;
-  z-index: 8;
 }
 
-.sel2 .click_menu > .submenutop_title {
-  width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  column-gap: 30px;
-}
-
-.sel2 .click_menu > .submenutop_title > button {
-  width: 35%;
-  height: fit-content;
-  font-size: 18px;
-  font-weight: normal;
-  color: #000;
-  text-align: center;
-  margin-bottom: 30px;
-  border: none;
-  border-bottom: 2px solid #dededed4;
-  padding-bottom: 12px;
-  background-color: transparent;
-  font-family: "Noto Sans KR", sans-serif;
+.sel2 .click_menu.active {
+  /* transform: translateY(0%);
+  display: block; */
 }
 
 .sel2 .click_menu li {
@@ -418,7 +420,7 @@ header {
 }
 
 /* 증상 버튼 클릭 시 글씨 굵기, 줄 컬러 변경하기 */
-.click_menu > .submenutop_title > #on {
+.submenutop_title > #symptoms_btn.on {
   font-weight: bold;
   border-bottom: 2px solid #000000e3;
 }
@@ -789,11 +791,6 @@ header {
   color: #000000a8;
 }
 
-/* 풋터 */
-footer {
-  margin-top: 40px;
-}
-
 /* 관련 페이지로 이동하는 a태그들에게 마우스 오버시 */
 .move_pagetext a:hover {
   font-weight: bold;
@@ -827,13 +824,7 @@ footer {
 /* 과목 선택 버튼 오버시 */
 .sel2 .subject_aake:hover {
   background-color: #f4f4f4;
-  cursor: default;
-}
-
-/* 마우스 오버시 서브메뉴를 나타내라 */
-.sel2 .subject_aake:hover .submenu {
-  display: block;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
 /* 사진 첨부 버튼 오버시 */

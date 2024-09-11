@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/sub/common.css" />
     <link rel="icon" href="../img/favicon.png" />
     <link rel="stylesheet" href="../css/sub/counsel.css" />
+    <link rel="stylesheet" href="../css/sub/responsive/sub/rps_counsel.css" />
   </head>
   <body>
     <div class="wrap">
@@ -23,9 +24,6 @@
           <!-- 메뉴 -->
           <nav>
             <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
               <li>
                 <a href="#">회사소개</a>
               </li>
@@ -47,7 +45,7 @@
       <!-- 중간 바로 질문하기 섹션 -->
       <section class="counsel_sec">
         <div class="counsel_con">
-          <div class="hospital_lefttext">
+          <div class="counsel_lefttext">
             <div class="logo_text">
               <!-- 로고 -->
               <h1>
@@ -109,7 +107,7 @@
                 <div class="sel2">
                   <nav>
                     <ul>
-                      <li class="subject_aake">
+                      <li class="subject_aake" id="subject_aake">
                         증상 / 과목 선택
                         <svg
                           width="12"
@@ -123,147 +121,144 @@
                             fill="#8D9297"
                           ></path>
                         </svg>
-                        <!-- 2차 메뉴 -->
-                        <ul class="submenu">
+                        <div class="change"></div>
+                        <div class="list_all">
                           <div class="submenutop_title">
-                            <button type="button" onclick="subject()" id="on">
+                            <button type="button" id="subject_btn" class="on">
                               과목
                             </button>
-                            <button type="button" onclick="symptoms()" id="off">
+                            <button type="button" id="symptoms_btn" class="off">
                               증상
                             </button>
                           </div>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">내과</a>
-                              <p>감기, 편도염, 소화기, 호흡기 등</p>
-                            </div>
-                            <div class="icon14"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">피부과</a>
-                              <p>여드름, 화상, 흉터 상처 등</p>
-                            </div>
-                            <div class="icon15"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">이비인후과</a>
-                              <p>비염, 이명, 등</p>
-                            </div>
-                            <div class="icon16"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">안과</a>
-                              <p>결막염, 눈병, 안구건조증 등</p>
-                            </div>
-                            <div class="icon17"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">가정의학과</a>
-                              <p>건강검진, 예방, 기타 질환 등</p>
-                            </div>
-                            <div class="icon18"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">소아과</a>
-                              <p>감기, 발열, 소화기, 호흡기 등</p>
-                            </div>
-                            <div class="icon19"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">정형외과</a>
-                              <p>관절염, 연골파열, 골절, 척추 등</p>
-                            </div>
-                            <div class="icon20"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">비뇨기과</a>
-                              <p>남성질환, 방광염 등</p>
-                            </div>
-                            <div class="icon21"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">기타</a>
-                              <p>반려동물</p>
-                            </div>
-                            <div class="icon22"></div>
-                          </li>
-                        </ul>
-                        <!-- 클릭하면 나타나는 서브메뉴 -->
-                        <ul class="click_menu">
-                          <div class="submenutop_title">
-                            <button type="button" onclick="subject()" id="off">
-                              과목
-                            </button>
-                            <button type="button" onclick="symptoms()" id="on">
-                              증상
-                            </button>
+                          <div class="submenu_all">
+                            <!-- 증상 -->
+                            <ul class="submenu">
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">내과</a>
+                                  <p>감기, 편도염, 소화기, 호흡기 등</p>
+                                </div>
+                                <div class="icon14"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">피부과</a>
+                                  <p>여드름, 화상, 흉터 상처 등</p>
+                                </div>
+                                <div class="icon15"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">이비인후과</a>
+                                  <p>비염, 이명, 등</p>
+                                </div>
+                                <div class="icon16"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">안과</a>
+                                  <p>결막염, 눈병, 안구건조증 등</p>
+                                </div>
+                                <div class="icon17"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">가정의학과</a>
+                                  <p>건강검진, 예방, 기타 질환 등</p>
+                                </div>
+                                <div class="icon18"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">소아과</a>
+                                  <p>감기, 발열, 소화기, 호흡기 등</p>
+                                </div>
+                                <div class="icon19"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">정형외과</a>
+                                  <p>관절염, 연골파열, 골절, 척추 등</p>
+                                </div>
+                                <div class="icon20"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">비뇨기과</a>
+                                  <p>남성질환, 방광염 등</p>
+                                </div>
+                                <div class="icon21"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">기타</a>
+                                  <p>반려동물</p>
+                                </div>
+                                <div class="icon22"></div>
+                              </li>
+                            </ul>
+                            <!-- 클릭하면 나타나는 서브메뉴 -->
+                            <ul class="click_menu">
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">감기 / 몸살</a>
+                                  <p>기침, 가래, 콧물, 발열 등</p>
+                                </div>
+                                <div class="icon23"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">소화기질환</a>
+                                  <p>소화불량, 장염, 위염 등</p>
+                                </div>
+                                <div class="icon24"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">정신건강</a>
+                                  <p>우을증, 공황장애 등</p>
+                                </div>
+                                <div class="icon25"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">여성질환</a>
+                                  <p>질염, 방광염 등</p>
+                                </div>
+                                <div class="icon26"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">남성질환</a>
+                                  <p>남성질환, 방광염 등</p>
+                                </div>
+                                <div class="icon27"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">사후피임약</a>
+                                  <p>피임약</p>
+                                </div>
+                                <div class="icon28"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">반려동물 피부염</a>
+                                  <p>진드기, 피부염증 등</p>
+                                </div>
+                                <div class="icon29"></div>
+                              </li>
+                              <li>
+                                <div class="hospital">
+                                  <a href="#">반려동물 관절</a>
+                                  <p>골절, 파열 등</p>
+                                </div>
+                                <div class="icon30"></div>
+                              </li>
+                            </ul>
                           </div>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">감기 / 몸살</a>
-                              <p>기침, 가래, 콧물, 발열 등</p>
-                            </div>
-                            <div class="icon23"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">소화기질환</a>
-                              <p>소화불량, 장염, 위염 등</p>
-                            </div>
-                            <div class="icon24"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">정신건강</a>
-                              <p>우을증, 공황장애 등</p>
-                            </div>
-                            <div class="icon25"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">여성질환</a>
-                              <p>질염, 방광염 등</p>
-                            </div>
-                            <div class="icon26"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">남성질환</a>
-                              <p>남성질환, 방광염 등</p>
-                            </div>
-                            <div class="icon27"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">사후피임약</a>
-                              <p>피임약</p>
-                            </div>
-                            <div class="icon28"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">반려동물 피부염</a>
-                              <p>진드기, 피부염증 등</p>
-                            </div>
-                            <div class="icon29"></div>
-                          </li>
-                          <li>
-                            <div class="hospital">
-                              <a href="#">반려동물 관절</a>
-                              <p>골절, 파열 등</p>
-                            </div>
-                            <div class="icon30"></div>
-                          </li>
-                        </ul>
+                        </div>
                       </li>
                     </ul>
                   </nav>
@@ -338,7 +333,7 @@
                   </p>
                   <p>
                     서비스 운영을 방해하는 행위가 반복적으로 발생할 경우, 회원
-                    및 의료진 보호를 위하여<br />
+                    및 의료진 보호를 위하여<br class="onlyPC" />
                     서비스 이용이 한시적 또는 영구적으로 사전안내 없이 제한 될
                     수 있습니다.
                   </p>
@@ -348,7 +343,7 @@
                   </p>
                   <p>
                     답변은 의학적 판단이나 진료 행위로 해석될 수 없으며,
-                    닥터나우와 답변 의료인은 이로 인해<br />
+                    닥터나우와 답변 의료인은 이로 인해<br class="onlyPC" />
                     발생하는 어떠한 책임도 지지 않아요.
                   </p>
                   <p>
@@ -441,41 +436,6 @@
         <div class="bottom_copy">&copy; professional. All rights reserved.</div>
       </footer>
     </div>
+    <script src="../js/sub/counsel.js"></script>
   </body>
-  <script>
-    function subject() {
-      // 과목 버튼을 누르면 과목 서브메뉴 나타내기
-      document.querySelector(".sel2 .submenu").style.display = "block";
-      document.querySelector(".sel2 .click_menu").style.display = "none";
-    }
-    // 증상 버튼을 누르면 증상 서브메뉴 나타내기
-    function symptoms() {
-      document.querySelector(".sel2 .submenu").style.display = "none";
-      document.querySelector(".sel2 .click_menu").style.display = "block";
-    }
-
-    function keyEvt() {
-      let txt = document.getElementsByTagName("textarea"); //textArea태그를 불러오는 변수
-      let msg = document.getElementsByTagName("span"); //span태그을 불러오는 변수
-      let maxText = document.querySelector(".questionbox_text > p");
-      let val = txt[0].value;
-
-      //색을 변경해주는 제어문
-      if (val.length <= 500 && val.length >= 0) {
-        // 만약 입력 내용이 0~500라면,
-        msg[0].style.color = "#000"; // span을 #000으로 한다.
-      }
-
-      //글자 제한, 글자 카운트
-      if (val.length >= 500) {
-        // 만약에 길이가 500이상이라면,
-        alert("500글자까지만 가능합니다."); //경고
-        txt[0].value = val.substr(0, 501); // 내용은, 너가 입력한 값의 500글자 까지만!
-        msg[0].innerHTML = "500";
-        maxText.style.color = "#000"; // 글자 수가 500까지 채워지면 p태그의 500수의 컬러를 #000으로 한다.
-      } else {
-        msg[0].innerHTML = val.length; //글자 길이가 실시간으로 올라간다.
-      }
-    }
-  </script>
 </html>

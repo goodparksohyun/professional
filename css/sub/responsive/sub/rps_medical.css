@@ -205,8 +205,8 @@
     width: 100%;
     height: auto;
     justify-content: unset;
-    gap: 45px;
-    padding: 40px 22px;
+    gap: 18px;
+    padding: 40px 22px 20px;
   }
 
   .middle_sec {
@@ -400,8 +400,8 @@
     width: 100%;
     height: auto;
     justify-content: unset;
-    gap: 30px;
-    padding: 40px 50px;
+    gap: 18px;
+    padding: 40px 22px 20px;
     flex-direction: column;
   }
 
@@ -509,7 +509,7 @@
     padding: 20px;
     position: absolute;
     bottom: 100px;
-    left: 50%; /* 중앙 정렬 */
+    left: 288%;
     transform: translate(-50%, 100%);
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
@@ -551,12 +551,6 @@
     color: #000;
   }
 
-  .sel .submenu > li > .hospital > p {
-    font-size: 16px;
-    font-weight: 400;
-    color: #aeb3be;
-  }
-
   .sel .submenu > li > .hospital {
     width: 50%;
     height: fit-content;
@@ -573,6 +567,7 @@
 
   .sel .submenu > li > .hospital > p {
     font-size: 14px;
+    padding: 0;
   }
 
   .top p {
@@ -649,7 +644,8 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+/* 모바일 사이즈 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   /* 헤더 */
   .hader_wrap {
     width: 100%;
@@ -719,8 +715,8 @@
     width: 100%;
     height: auto;
     justify-content: unset;
-    gap: 30px;
-    padding: 40px 0px;
+    gap: 15px;
+    padding: 40px 0px 0px;
     flex-direction: column;
   }
 
@@ -823,6 +819,319 @@
   .sel .submenu.active {
     transform: translate(-25%, 0);
     opacity: 1;
+  }
+
+  .sel .submenu > h2 {
+    width: 100%;
+    height: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #00000099;
+    padding-bottom: 12px;
+  }
+
+  .sel .submenu li {
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+  }
+
+  .sel .submenu > li > .hospital > a {
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  .sel .submenu > li > .hospital > p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #aeb3be;
+  }
+
+  .sel .submenu > li > .hospital {
+    width: 50%;
+    height: fit-content;
+  }
+
+  .sel .submenu > h2 {
+    font-size: 20px;
+  }
+
+  .sel .submenu li {
+    height: 55px;
+    gap: 80px;
+  }
+
+  .sel .submenu > li > .hospital > p {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .top p {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  .top .all {
+    box-sizing: border-box;
+    padding: 0 15px;
+  }
+
+  .text_gather {
+    width: 100%;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .text_gather .text {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 10px 15px;
+  }
+
+  .text_gather .text:hover {
+    transform: scale(1);
+  }
+
+  .text h4 {
+    font-size: 16px;
+    width: fit-content;
+    margin-bottom: 15px;
+    white-space: nowrap;
+  }
+
+  .text p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .icon7 {
+    margin-right: 5px;
+  }
+
+  .icons_set {
+    width: 100%;
+  }
+
+  .icons_set > .icon_text > p {
+    font-size: 14px;
+  }
+
+  .icons_set > .Just_before > p {
+    font-size: 12px;
+  }
+
+  /* 오른쪽 섹션 */
+  .right {
+    display: none;
+  }
+
+  .right_bottom1 p {
+    width: 216px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 20px 10px;
+  }
+
+  .foot {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .foot_manu a {
+    margin-right: 25px;
+    font-size: 12px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+
+  .bottom_copy {
+    font-size: 10px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+
+  .hader_wrap > nav > ul > li a {
+    display: none;
+  }
+
+  /* 서브 페이지 배너 */
+  .sub_banner {
+    height: 250px;
+    background-size: cover;
+  }
+
+  .sub_title {
+    width: fit-content;
+    height: 250px;
+    justify-content: space-between;
+    gap: 35px;
+  }
+
+  .sub_title1 {
+    display: none;
+  }
+
+  .sub_img {
+    width: fit-content;
+  }
+
+  .sub_img1 img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .left_btnimg img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .left_btn {
+    width: 250px;
+    height: 85px;
+    padding: 14px 11px;
+  }
+
+  .left_text {
+    margin-right: 15px;
+  }
+
+  .left_text h3 {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .left_text p {
+    font-size: 13px;
+  }
+
+  /* 가운데 질문 모음 */
+  .middle_con {
+    width: 100%;
+    height: auto;
+    justify-content: unset;
+    gap: 15px;
+    padding: 40px 0px 0px;
+    flex-direction: column;
+  }
+
+  .middle_sec {
+    height: auto;
+  }
+
+  .logo_text h1 {
+    font-size: 24px;
+    margin-right: 15px;
+  }
+
+  .search a {
+    font-size: 13px;
+  }
+
+  .btn button {
+    width: 230px;
+    display: none;
+  }
+
+  .user_info a {
+    height: 34px;
+    padding: 10px;
+  }
+
+  /* 가운데 실시간 상담 섹션 */
+
+  /* 왼쪽 섹션 */
+  .middle_lefttext {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo_text {
+    display: none;
+  }
+
+  .user_info {
+    display: none;
+  }
+
+  .move_page {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 24px;
+    gap: 20px;
+  }
+
+  .move_page .move_pagetext {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 11px;
+    background-color: #ffffff2e;
+    border: 0.5px solid #dedede85;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .move_page .icon10,
+  .move_page .icon11,
+  .move_page .icon12,
+  .move_page .icon13 {
+    margin-right: 7px;
+  }
+
+  .move_page .move_pagetext:hover {
+    background-color: #d2d2d21f;
+    transition: 0.3s;
+  }
+
+  /* 가운데 질문 섹션 */
+  .middle_question {
+    width: 100%;
+    height: auto;
+  }
+
+  .sel .subject {
+    font-size: 13px;
+  }
+
+  .sel .submenu {
+    width: 430px;
+    height: 810px;
+    padding: 20px;
   }
 
   .sel .submenu > h2 {

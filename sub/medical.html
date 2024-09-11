@@ -467,5 +467,23 @@
         var submenu = document.querySelector(".sel .submenu");
         submenu.classList.toggle("active");
       });
+
+    // 과목 선택 메뉴
+    // 모든 a 태그에 클릭 이벤트를 추가
+    document.querySelectorAll(".submenu .hospital a").forEach(function (item) {
+      item.addEventListener("click", function (e) {
+        e.preventDefault(); // a 태그의 기본 동작(페이지 이동)을 막음
+
+        // 클릭한 a 태그의 텍스트 가져오기
+        const selectedText = this.textContent;
+
+        // .subject 안의 텍스트를 클릭한 a 태그의 텍스트로 변경
+        document.querySelector(".subject").childNodes[0].textContent =
+          selectedText;
+
+        // .submenu 박스를 숨김
+        document.querySelector(".submenu").style.display = "none";
+      });
+    });
   </script>
 </html>

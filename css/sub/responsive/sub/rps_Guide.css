@@ -14,6 +14,7 @@
   .Guide_con {
     width: 100%;
     padding: 30px 15px;
+    padding: 30px 15px 20px;
   }
 
   /* 왼쪽 섹션 */
@@ -144,8 +145,8 @@
 
   /* 건강 가이드 섹션 */
   .Guide_con {
-    width: 100%;
-    padding: 30px 15px;
+    width: 1020px;
+    padding: 30px 11px 20px;
   }
 
   /* 왼쪽 섹션 */
@@ -272,8 +273,8 @@
     width: 100%;
     height: auto;
     justify-content: unset;
-    gap: 30px;
-    padding: 30px 15px;
+    gap: 18px;
+    padding: 30px 15px 20px;
     flex-direction: column;
   }
 
@@ -435,7 +436,8 @@
   }
 }
 
-@media screen and (max-width: 480px) {
+/* 모바일 사이즈 */
+@media screen and (min-width: 481px) and (max-width: 768px) {
   /* 헤더 */
   .hader_wrap {
     width: 100%;
@@ -455,8 +457,8 @@
     width: 100%;
     height: auto;
     justify-content: unset;
-    gap: 30px;
-    padding: 30px 15px;
+    gap: 15px;
+    padding: 30px 15px 0px;
     flex-direction: column;
   }
 
@@ -529,7 +531,194 @@
   /* 가운데 건강 가이드 섹션 */
   .middle_Guide {
     height: auto;
-    padding: 15px 0px;
+    padding: 15px 0px 20px;
+    margin: 0 auto;
+  }
+
+  .middle_Guide > .text_gather {
+    width: 100%;
+  }
+
+  .middle_Guide > .text_gather > .text_gather1 {
+    flex-direction: column;
+    width: 100%;
+    row-gap: 50px;
+  }
+
+  .text_gather .text1 {
+    margin-bottom: 0;
+    width: 100%;
+  }
+
+  .text1 h4 {
+    width: 100%;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  .text1 p {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  .date {
+    width: 75px;
+    height: 18px;
+    margin-top: 10px;
+  }
+
+  .date p {
+    font-size: 14px;
+    color: #aeb3be;
+  }
+
+  .text_gather1 .text1:hover {
+    transform: scale(1);
+  }
+
+  /* 오른쪽 섹션 */
+  .right {
+    display: none;
+  }
+
+  .right_bottom1 p {
+    width: 216px;
+    font-size: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-break: break-all;
+  }
+
+  /* 풋터 */
+  footer {
+    height: auto;
+    padding: 30px 20px 10px;
+  }
+
+  .foot {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .foot_manu a {
+    margin-right: 25px;
+    font-size: 12px;
+  }
+
+  .foot_manu a:last-child {
+    margin-right: 0px;
+  }
+
+  .bottom_copy {
+    font-size: 10px;
+    margin-top: 25px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* 헤더 */
+  .hader_wrap {
+    width: 100%;
+  }
+
+  header {
+    box-sizing: border-box;
+    padding: 0px 20px;
+  }
+
+  .hader_wrap > nav > ul > li a {
+    display: none;
+  }
+
+  /* 건강 가이드 섹션 */
+  .Guide_con {
+    width: 100%;
+    height: auto;
+    justify-content: unset;
+    gap: 15px;
+    padding: 30px 15px 0px;
+    flex-direction: column;
+  }
+
+  /* 왼쪽 섹션 */
+  .Guide_lefttext {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo_text {
+    display: none;
+  }
+
+  .btn button {
+    display: none;
+  }
+
+  .user_info a {
+    display: none;
+  }
+
+  /* 왼쪽 섹션 */
+  .middle_lefttext {
+    width: 100%;
+    height: auto;
+  }
+
+  .logo_text {
+    display: none;
+  }
+
+  .user_info {
+    display: none;
+  }
+
+  .move_page {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 0 24px;
+    gap: 20px;
+  }
+
+  .move_page .move_pagetext {
+    width: calc(50% - 10px);
+    box-sizing: border-box;
+    padding: 11px;
+    background-color: #ffffff2e;
+    border: 0.5px solid #dedede85;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .move_page .icon10,
+  .move_page .icon11,
+  .move_page .icon12,
+  .move_page .icon13 {
+    margin-right: 7px;
+  }
+
+  .move_page .move_pagetext:hover {
+    background-color: #d2d2d21f;
+    transition: 0.3s;
+  }
+
+  /* 가운데 건강 가이드 섹션 */
+  .middle_Guide {
+    height: auto;
+    padding: 15px 0px 20px;
     margin: 0 auto;
   }
 
