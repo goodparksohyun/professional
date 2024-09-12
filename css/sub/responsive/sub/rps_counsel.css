@@ -192,92 +192,6 @@
     margin-right: 7px;
   }
 
-  /* 2차 메뉴 */
-  .sel2 .subject_aake {
-    font-size: 13px;
-  }
-
-  .sel2 .subject_aake .click_menu {
-    width: 430px;
-    height: 730px;
-    padding: 20px;
-    position: absolute;
-    bottom: 100px;
-    left: -2%;
-  }
-  /* 
-  .sel2 .subject_aake > .submenu {
-    width: 430px;
-    height: 810px;
-    padding: 20px;
-    position: absolute;
-    bottom: 100px;
-    left: 192%;
-    transform: translate(-50%, 100%);
-    opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    z-index: 9;
-  }
- 
-  .sel2 .submenu.active {
-    transform: translate(-50%, 0);
-    opacity: 1;
-  } */
-
-  .sel2 .submenu > h2 {
-    width: 100%;
-    height: fit-content;
-    font-size: 18px;
-    font-weight: bold;
-    color: #000;
-    text-align: center;
-    margin-bottom: 30px;
-    border-bottom: 2px solid #00000099;
-    padding-bottom: 12px;
-  }
-
-  .sel2 .submenu li,
-  .sel2 .click_menu li {
-    width: 100%;
-    height: fit-content;
-    margin-bottom: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 150px;
-  }
-
-  .sel2 .submenu > li > .hospital > a,
-  .sel2 .click_menu > li > .hospital > a {
-    font-size: 18px;
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-    color: #000;
-  }
-
-  .sel2 .submenu > li > .hospital,
-  .sel2 .click_menu > li > .hospital {
-    width: 50%;
-    height: fit-content;
-  }
-
-  .sel2 .submenu > h2,
-  .sel2 .click_menu > h2 {
-    font-size: 20px;
-  }
-
-  .sel2 .submenu li,
-  .sel2 .click_menu li {
-    height: 55px;
-    gap: 80px;
-  }
-
-  .sel2 .submenu > li > .hospital > p,
-  .sel2 .click_menu > li > .hospital > p {
-    font-size: 14px;
-  }
-
   /* 오른쪽 섹션 */
   .right {
     display: none;
@@ -392,40 +306,20 @@
   }
 
   /* 2차 메뉴 */
-  .sel2 .subject_aake {
-    font-size: 13px;
-  }
-  .sel2 .subject_aake .click_menu {
+  .sel2 .subject_aake .list_all {
     width: 430px;
-    height: 810px;
     padding: 20px;
-    position: absolute;
-    bottom: 100px;
-    left: 96%;
-    transform: translate(-25%, 0);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    z-index: 9;
   }
 
-  /* 
-  .sel2 .subject_aake > .submenu {
-      width: 430px;
-      height: 810px;
-      padding: 20px;
-      position: absolute;
-      bottom: 100px;
-      left: 96%;
-      transform: translate(-25%, 100%);
-      transition: transform 0.5s ease, opacity 0.5s ease;
-      z-index: 9;
-    }
+  /* 클릭하면 나타나는 서브메뉴 */
+  .sel2 .list_all .submenu {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-top: 45px;
+  }
 
-  .sel2 .submenu.active {
-    transform: translate(-25%, 0);
-    opacity: 1;
-  } */
-
-  .sel2 .submenu > h2 {
+  .sel2 .list_all > h2 {
     width: 100%;
     height: fit-content;
     font-size: 18px;
@@ -437,15 +331,22 @@
     padding-bottom: 12px;
   }
 
-  .sel2 .submenu li,
-  .sel2 .click_menu li {
+  .sel2 .list_all .submenu li,
+  .sel2 .list_all .click_menu li {
     height: 55px;
     gap: 80px;
   }
 
-  .sel2 .submenu > li > .hospital > p,
-  .sel2 .click_menu > li > .hospital > p {
+  .sel2 .list_all .submenu > li > .hospital > p,
+  .sel2 .list_all .click_menu > li > .hospital > p {
     font-size: 14px;
+  }
+
+  /* 클릭하면 나타나는 서브메뉴 */
+  .sel2 .list_all .click_menu {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0px;
   }
 
   /* 오른쪽 섹션 */
@@ -567,39 +468,20 @@
   }
 
   /* 2차 메뉴 */
-  .sel2 .subject_aake {
-    font-size: 13px;
+  .sel2 .subject_aake .list_all {
+    width: 430px;
+    padding: 20px;
   }
 
-  /* .sel2 .subject_aake > .submenu {
-    width: 430px;
-    height: 810px;
-    padding: 20px;
-    position: absolute;
-    bottom: 100px;
-    left: 96%;
-    transform: translate(-25%, 100%);
-    opacity: 0;
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    z-index: 9;
-  } .sel2 .submenu.active {
-    transform: translate(-25%, 0);
-    opacity: 1;
-  }*/
-
-  .sel2 .subject_aake .click_menu {
-    width: 430px;
-    height: 810px;
-    padding: 20px;
-    position: absolute;
-    bottom: 100px;
-    left: 96%;
-    transform: translate(-25%, 0);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-    z-index: 9;
+  /* 클릭하면 나타나는 서브메뉴 */
+  .sel2 .list_all .submenu {
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    padding-top: 45px;
   }
 
-  .sel2 .submenu > h2 {
+  .sel2 .list_all > h2 {
     width: 100%;
     height: fit-content;
     font-size: 18px;
@@ -611,15 +493,22 @@
     padding-bottom: 12px;
   }
 
-  .sel2 .submenu li,
-  .sel2 .click_menu li {
+  .sel2 .list_all .submenu li,
+  .sel2 .list_all .click_menu li {
     height: 55px;
     gap: 80px;
   }
 
-  .sel2 .submenu > li > .hospital > p,
-  .sel2 .click_menu > li > .hospital > p {
+  .sel2 .list_all .submenu > li > .hospital > p,
+  .sel2 .list_all .click_menu > li > .hospital > p {
     font-size: 14px;
+  }
+
+  /* 클릭하면 나타나는 서브메뉴 */
+  .sel2 .list_all .click_menu {
+    width: 100%;
+    height: 100%;
+    padding: 15px 0px;
   }
 
   /* 오른쪽 섹션 */

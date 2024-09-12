@@ -38,7 +38,7 @@
           <!-- 아이콘 -->
           <div class="icon">
             <a href="#"><div class="icon1"></div></a>
-            <a href="#"><div class="icon2"></div></a>
+            <a href="../sub/login.html"><div class="icon2"></div></a>
           </div>
         </div>
       </header>
@@ -86,7 +86,7 @@
                   </a>
                 </h1>
                 <div class="search">
-                  <a href="#">
+                  <a href="../sub/search_page.html">
                     <div class="icon9"></div>
                     검색
                   </a>
@@ -124,7 +124,7 @@
               </div>
               <div class="user_info">
                 <a href="#">내 정보 보기</a>
-                <a href="#">로그인 하기</a>
+                <a href="../sub/login.html">로그인 하기</a>
               </div>
             </div>
             <!-- 가운데 질문 모음 -->
@@ -150,8 +150,15 @@
                               fill="#8D9297"
                             ></path>
                           </svg>
+                          <div class="change"></div>
                           <!-- 2차 메뉴 -->
                           <ul class="submenu">
+                            <img
+                              src="../img/search_page.img/X_big_icon.png"
+                              alt="X"
+                              class="close_icon"
+                              id="close_icon"
+                            />
                             <h2>과목</h2>
                             <li>
                               <div class="hospital">
@@ -459,31 +466,6 @@
         <div class="bottom_copy">&copy; professional. All rights reserved.</div>
       </footer>
     </div>
+    <script src="../js/sub/medical.js"></script>
   </body>
-  <script>
-    document
-      .querySelector(".sel .subject")
-      .addEventListener("click", function () {
-        var submenu = document.querySelector(".sel .submenu");
-        submenu.classList.toggle("active");
-      });
-
-    // 과목 선택 메뉴
-    // 모든 a 태그에 클릭 이벤트를 추가
-    document.querySelectorAll(".submenu .hospital a").forEach(function (item) {
-      item.addEventListener("click", function (e) {
-        e.preventDefault(); // a 태그의 기본 동작(페이지 이동)을 막음
-
-        // 클릭한 a 태그의 텍스트 가져오기
-        const selectedText = this.textContent;
-
-        // .subject 안의 텍스트를 클릭한 a 태그의 텍스트로 변경
-        document.querySelector(".subject").childNodes[0].textContent =
-          selectedText;
-
-        // .submenu 박스를 숨김
-        document.querySelector(".submenu").style.display = "none";
-      });
-    });
-  </script>
 </html>

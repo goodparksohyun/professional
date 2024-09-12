@@ -1132,6 +1132,7 @@
     width: 430px;
     height: 810px;
     padding: 20px;
+    left: -96%;
   }
 
   .sel .submenu > h2 {

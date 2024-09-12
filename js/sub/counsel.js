@@ -1,40 +1,118 @@
 //과목/증상 선택 버튼
 const subject_aake = document.getElementById("subject_aake");
 subject_aake.onclick = showHideMenu;
-//과목버튼
-const subject_btn = document.getElementById("subject_btn");
-
-subject_btn.onclick = subject;
-//증상버튼
-const symptoms_btn = document.getElementById("symptoms_btn");
-symptoms_btn.onclick = symptoms;
 
 //증상/과목 누르면 toggle하기
 function showHideMenu() {
   const list_all = document.querySelector(".list_all");
-  list_all.classList.toggle("on");
+  list_all.classList.add("on");
 }
 
-// 과목 버튼을 누르면 과목 서브메뉴 나타내기
-function subject() {
-  console.log(this);
+// close_icon을 클릭했을 때 list_all 창이 닫히도록 구현
+const closeIcon = document.getElementById("close_icon");
+closeIcon.addEventListener("click", function (e) {
+  e.stopPropagation();
+  const listAll = document.querySelector(".list_all");
+  listAll.classList.remove("on"); // list_all 창을 닫음 (숨김 처리)
+  list_all.classList.add("off");
+});
 
-  symptoms_btn.className = "off";
-  this.className = "on";
-  document.querySelector(".submenu_all > ul.submenu").style.display = "block";
-  document.querySelector(".submenu_all > ul.click_menu").style.display = "none";
-}
-// 증상 버튼을 누르면 증상 서브메뉴 나타내기
-function symptoms() {
-  console.log(this);
+// 버튼과 메뉴 요소 선택
+const subjectBtn = document.getElementById("subject_btn");
+const symptomsBtn = document.getElementById("symptoms_btn");
+const submenu = document.querySelector(".submenu");
+const clickMenu = document.querySelector(".click_menu");
+const changeDiv = document.querySelector(".change");
 
-  subject_btn.className = "off";
-  this.className = "on";
-  document.querySelector(".submenu_all > ul.click_menu").style.display =
-    "block";
-  document.querySelector(".submenu_all > ul.submenu").style.display = "none";
-}
+// 초기 상태: 과목 버튼 활성화 및 과목 메뉴 표시
+submenu.style.display = "block";
 
+// 과목 버튼 클릭 시 이벤트 처리
+subjectBtn.addEventListener("click", function () {
+  subjectBtn.classList.add("on");
+  subjectBtn.classList.remove("off");
+  symptomsBtn.classList.add("off");
+  symptomsBtn.classList.remove("on");
+  submenu.style.display = "block";
+  clickMenu.style.display = "none";
+});
+
+// 증상 버튼 클릭 시 이벤트 처리
+symptomsBtn.addEventListener("click", function () {
+  symptomsBtn.classList.add("on");
+  symptomsBtn.classList.remove("off");
+  subjectBtn.classList.add("off");
+  subjectBtn.classList.remove("on");
+  submenu.style.display = "none";
+  clickMenu.style.display = "block";
+});
+
+// 모든 a 태그를 선택하여 기본 이벤트 차단
+const links = document.querySelectorAll(".hospital a");
+
+links.forEach((link) => {
+  link.addEventListener("click", function (event) {
+    event.preventDefault(); // 기본 이벤트 차단
+  });
+});
+
+// 과목 선택
+
+// 모든 a 태그에 클릭 이벤트 추가
+document.addEventListener("DOMContentLoaded", function () {
+  // .submenu와 .change 요소를 선택합니다.
+  const submenu = document.querySelector(".submenu");
+  const changeElement = document.querySelector(".change");
+
+  // .submenu 안의 모든 a 태그를 선택합니다.
+  const links = submenu.querySelectorAll(".hospital");
+
+  // 각 a 태그에 클릭 이벤트 리스너를 추가합니다.
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      // 클릭한 a 태그의 텍스트를 가져옵니다.
+      const text = this.childNodes[1].textContent;
+      console.log(text);
+
+      // .change 요소의 텍스트를 클릭한 a 태그의 텍스트로 변경합니다.
+      changeElement.textContent = text;
+
+      // .change 요소의 스타일을 굵게(bold)로 설정합니다.
+      changeElement.style.fontWeight = "bold";
+      if (submenu.classList("active")) toggleActiveBtn();
+    });
+  });
+});
+
+// 증상 선택
+
+// 모든 a 태그에 클릭 이벤트 추가
+document.addEventListener("DOMContentLoaded", function () {
+  // .click_menu와 .change 요소를 선택합니다.
+  const click_menu = document.querySelector(".click_menu");
+  const changeElement = document.querySelector(".change");
+
+  // .click_menu 안의 모든 a 태그를 선택합니다.
+  const links = click_menu.querySelectorAll(".hospital");
+
+  // 각 a 태그에 클릭 이벤트 리스너를 추가합니다.
+  links.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      // 클릭한 a 태그의 텍스트를 가져옵니다.
+      const text = this.childNodes[1].textContent;
+      console.log(text);
+
+      // .change 요소의 텍스트를 클릭한 a 태그의 텍스트로 변경합니다.
+      changeElement.textContent = text;
+
+      // .change 요소의 스타일을 굵게(bold)로 설정합니다.
+      changeElement.style.fontWeight = "bold";
+      if (submenu.classList("active")) toggleActiveBtn();
+    });
+  });
+});
+
+// 질문 창
 function keyEvt() {
   let txt = document.getElementsByTagName("textarea"); //textArea태그를 불러오는 변수
   let msg = document.getElementsByTagName("span"); //span태그을 불러오는 변수
@@ -58,68 +136,3 @@ function keyEvt() {
     msg[0].innerHTML = val.length; //글자 길이가 실시간으로 올라간다.
   }
 }
-
-// // 과목 선택 메뉴
-// function toggleActiveBtn() {
-//   let submenu = document.querySelector(".sel2 .submenu");
-//   submenu.classList.toggle("active");
-// }
-// // subject_aake안에 증상 / 과목 선택를 클릭하면 서브메뉴들의 박스가 사라집니다.
-// document
-//   .querySelector(".sel2 .subject_aake")
-//   .addEventListener("click", toggleActiveBtn);
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   // .submenu와 .change 요소를 선택합니다.
-//   const submenu = document.querySelector(".submenu");
-//   const changeElement = document.querySelector(".change");
-
-//   // .submenu 안의 모든 a 태그를 선택합니다.
-//   const links = submenu.querySelectorAll(".hospital");
-
-//   // 각 a 태그에 클릭 이벤트 리스너를 추가합니다.
-//   links.forEach((link) => {
-//     link.addEventListener("click", function (event) {
-//       // 클릭한 a 태그의 텍스트를 가져옵니다.
-//       const text = this.childNodes[1].textContent;
-//       console.log(text);
-
-//       // .change 요소의 텍스트를 클릭한 a 태그의 텍스트로 변경합니다.
-//       changeElement.textContent = text;
-
-//       // .change 요소의 스타일을 굵게(bold)로 설정합니다.
-//       changeElement.style.fontWeight = "bold";
-//       if (submenu.classList("active")) toggleActiveBtn();
-//     });
-//   });
-// });
-
-// // 증상 선택 메뉴
-// function toggleActiveBtn2() {
-//   let click_menu = document.querySelector(".sel2 .click_menu");
-//   click_menu.classList.toggle("active");
-// }
-// document.addEventListener("DOMContentLoaded", function () {
-//   // .click_menu와 .change 요소를 선택합니다.
-//   const click_menu = document.querySelector(".click_menu");
-//   const changeElement = document.querySelector(".change");
-
-//   // .click_menu 안의 모든 a 태그를 선택합니다.
-//   const links = click_menu.querySelectorAll(".hospital");
-
-//   // 각 a 태그에 클릭 이벤트 리스너를 추가합니다.
-//   links.forEach((link) => {
-//     link.addEventListener("click", function (event) {
-//       // 클릭한 a 태그의 텍스트를 가져옵니다.
-//       const text = this.childNodes[1].textContent;
-//       console.log(text);
-
-//       // .change 요소의 텍스트를 클릭한 a 태그의 텍스트로 변경합니다.
-//       changeElement.textContent = text;
-
-//       // .change 요소의 스타일을 굵게(bold)로 설정합니다.
-//       changeElement.style.fontWeight = "bold";
-//       if (click_menu.classList("active")) toggleActiveBtn2();
-//     });
-//   });
-// });

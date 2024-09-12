@@ -10,18 +10,38 @@
   </head>
   <body>
     <div class="login-container">
-      <!-- 로고 -->
       <h1>
         <a href="/">
           <div></div>
           professional
         </a>
       </h1>
-      <div class="login-buttons">
-        <button class="login-button kakao">카카오 로그인</button>
-        <button class="login-button facebook">페이스북 로그인</button>
-        <button class="login-button google">구글 로그인</button>
-      </div>
+      <button
+        class="login-btn naver"
+        onclick="location.href='https://nid.naver.com/nidlogin.login'"
+      >
+        네이버로 시작하기
+      </button>
+      <button
+        class="login-btn kakao"
+        onclick="location.href='https://accounts.kakao.com/login'"
+      >
+        카카오로 시작하기
+      </button>
+      <button
+        class="login-btn google"
+        onclick="location.href='https://accounts.google.com/'"
+      >
+        Google로 시작하기
+      </button>
+      <button
+        class="login-btn apple"
+        onclick="location.href='https://appleid.apple.com/'"
+      >
+        Apple로 시작하기
+      </button>
+
+      <a href="../sub/login.html" class="signup-btn">회원가입</a>
     </div>
   </body>
 </html>

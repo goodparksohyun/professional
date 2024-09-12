@@ -227,15 +227,22 @@ header {
   z-index: 9;
   display: none;
 }
+
 .sel2 .subject_aake .list_all.on {
   transform: translateY(0);
   display: block;
 }
+
+.sel2 .subject_aake .list_all.off {
+  display: none;
+}
+
 .submenu_all {
   width: 100%;
   height: 90%;
   position: relative;
 }
+
 .submenu_all > ul {
   position: absolute;
   top: 50%;
@@ -249,7 +256,7 @@ header {
   display: none;
 }
 
-.sel2 .subject_aake .list_all .submenu .active {
+.sel2 .subject_aake .list_all .submenu.active {
   transform: translateY(0);
   display: block;
 }
@@ -383,11 +390,7 @@ header {
   position: absolute;
   box-sizing: border-box;
   padding: 30px;
-}
-
-.sel2 .click_menu.active {
-  /* transform: translateY(0%);
-  display: block; */
+  padding-top: 10px;
 }
 
 .sel2 .click_menu li {
@@ -479,6 +482,11 @@ header {
   height: 50px;
   background: url("../../img/counsel.img/counsel_sprites.png") -10px -10px;
   background-repeat: no-repeat;
+}
+
+/* x버튼 */
+.sel2 .list_all .close_icon {
+  float: right;
 }
 
 /* 질문 박스 */
@@ -812,12 +820,11 @@ header {
 }
 
 /* 과목 서브메뉴안에 있는 li 마우스 오버시 */
-.sel2 .subject_aake > .submenu > li:hover {
+.sel2 .subject_aake .list_all .submenu > li:hover {
   background-color: rgb(245, 246, 247, 0.41);
 }
 
-/* 증상 서브메뉴안에 있는 li 마우스 오버시 */
-.sel2 .subject_aake > .click_menu > li:hover {
+.sel2 .subject_aake .list_all .click_menu > li:hover {
   background-color: rgb(245, 246, 247, 0.41);
 }
 

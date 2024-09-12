@@ -281,6 +281,19 @@
   left: 0;
 }
 
+.sel .submenu {
+  display: none; /* 기본적으로 숨김 */
+}
+
+.sel .submenu.active {
+  display: block; /* active 클래스가 추가되면 보임 */
+}
+
+/* x버튼 */
+.sel .submenu .close_icon {
+  float: right;
+}
+
 .sel .submenu > h2 {
   width: 100%;
   height: fit-content;
@@ -583,13 +596,7 @@
 /* 과목 선택 버튼 오버시 */
 .sel .subject:hover {
   background-color: #f4f4f4;
-  cursor: default;
-}
-
-/* 과목 선택 오버시 서브메뉴를 나타내라 */
-.sel .subject:hover .submenu {
-  display: block;
-  transition: 0.3s;
+  cursor: pointer;
 }
 
 /* 서브메뉴안에 있는 li 마우스 오버시 */
