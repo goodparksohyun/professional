@@ -5,9 +5,10 @@
 body {
   font-family: "Roboto", "Noto Sans KR", sans-serif;
   color: #000;
+  overflow-x: hidden;
 }
 
-.wrap {
+#wrap {
   width: 100%;
   height: auto;
 }
